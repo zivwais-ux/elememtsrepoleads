@@ -1,0 +1,621 @@
+{
+ "base": "appXkWig8vi5kwzAa",
+ "pulledAt": "2026-11-09",
+ "note": "טבלאות המקור הקפואות ב-DEV (שמות וסוגים בלבד)",
+ "tables": [
+  {
+   "id": "tbl9SV4GU8kICBARH",
+   "name": "לידים - ויואלדי",
+   "primaryFieldId": "fldm1M0hvxMpgGktm",
+   "fields": [
+    {
+     "id": "fldm1M0hvxMpgGktm",
+     "name": "שם ליד",
+     "type": "singleLineText"
+    },
+    {
+     "id": "fldDgqJ4YAnKsj3Q3",
+     "name": "שם",
+     "type": "singleLineText"
+    },
+    {
+     "id": "fldSg0cMqs59mbOi2",
+     "name": "שם לפנייה",
+     "type": "singleLineText",
+     "description": "השם הפרטי בלבד, לשימוש בפתיחת הודעה. ריק כאשר לא זוהה שם פרטי סביר."
+    },
+    {
+     "id": "fld5iTo5dkD34nrsw",
+     "name": "תאריך כניסה",
+     "type": "createdTime"
+    },
+    {
+     "id": "fldOn0HOG6tq18HFh",
+     "name": "עיר",
+     "type": "singleLineText"
+    },
+    {
+     "id": "fldmhRiVuC5LYoJIk",
+     "name": "עסקי או פרטי?",
+     "type": "singleLineText"
+    },
+    {
+     "id": "fldXl0vq8jwuU9O8v",
+     "name": "הערות פנימיות",
+     "type": "multilineText"
+    },
+    {
+     "id": "fldhiIy2xuBH8Odta",
+     "name": "טלפון",
+     "type": "phoneNumber"
+    },
+    {
+     "id": "fldUKiMaKtXWc1GBX",
+     "name": "טלפון מתוקן",
+     "type": "singleLineText",
+     "description": "הטלפון בפורמט אחיד לשליחה ולזיהוי כפילויות. נוצר אוטומטית — השדה המקורי לא משתנה."
+    },
+    {
+     "id": "fld0LWUSnHlqEhGyd",
+     "name": "מייל",
+     "type": "email"
+    },
+    {
+     "id": "fldHK7T8DU8ihmi3o",
+     "name": "אין ליצור קשר",
+     "type": "checkbox",
+     "description": "הלקוח ביקש שלא נפנה אליו. עוצר כל פנייה, אוטומטית וידנית כאחד."
+    },
+    {
+     "id": "fld42hz38S4Bcmpa3",
+     "name": "סטטוס",
+     "type": "singleSelect"
+    },
+    {
+     "id": "fld5gTc6sj4BYUHpY",
+     "name": "סטטוס מכירה",
+     "type": "singleSelect",
+     "description": "איפה הליד עומד במשפך המכירה. משתנה רק בעקבות פעולה אנושית או אירוע ודאי — לא מהסקה אוטומטית. זהה בכל ארבע טבלאות הלידים."
+    },
+    {
+     "id": "fldl9wf983FcxakKS",
+     "name": "מצב טיפול",
+     "type": "singleSelect",
+     "description": "מה קרה במגע האחרון שלנו מול הליד. מתעדכן על ידי המערכת. זהה בכל ארבע טבלאות הלידים."
+    },
+    {
+     "id": "fldgN31KVKF3vqAkG",
+     "name": "פעולה הבאה",
+     "type": "singleSelect",
+     "description": "מה צריך לקרות עכשיו. נגזר משני הצירים יחד — מצב הטיפול קובע אם יש מגע פתוח, וסטטוס המכירה קובע למה המגע משמש."
+    },
+    {
+     "id": "fldhU0L4U1rtlb8N6",
+     "name": "פעילות אחרונה",
+     "type": "date",
+     "description": "מתי קרה הדבר המשמעותי האחרון — מכל כיוון, כולל תגובה של הלקוח. שונה ממועד הפנייה האחרונה שלנו."
+    },
+    {
+     "id": "flds81HECI7JvW2AC",
+     "name": "תאריך הטיפול הבא",
+     "type": "date",
+     "description": "התאריך שבו הליד יופיע שוב ברשימת המטלות. השדה שמניע את כל המערכת."
+    },
+    {
+     "id": "fldDtVDAt73L61iGd",
+     "name": "מספר פניות",
+     "type": "number",
+     "description": "כמה פעמים פנינו לליד הזה. משמש לאכיפת תקרת הפניות."
+    },
+    {
+     "id": "fldWaPWPMqbjTc6ok",
+     "name": "כמה מיטות?",
+     "type": "number"
+    },
+    {
+     "id": "fld8eyZDa0mxDna47",
+     "name": "כמה מיטות נרכשו",
+     "type": "number"
+    },
+    {
+     "id": "fldkWIzSqkBV2dXTg",
+     "name": "מעוניינים בליווי אישי?",
+     "type": "singleLineText"
+    },
+    {
+     "id": "fldq9qibEmFznLqsF",
+     "name": "מקור",
+     "type": "singleSelect"
+    },
+    {
+     "id": "fldzOsaXpSxHVfIZ7",
+     "name": "סכום עסקה",
+     "type": "currency"
+    },
+    {
+     "id": "fldigMULdYjtODo8U",
+     "name": "leadId",
+     "type": "singleLineText"
+    },
+    {
+     "id": "fldXSm8tt4QLCw61C",
+     "name": "דורש בדיקה",
+     "type": "checkbox",
+     "description": "משהו בליד דורש עין אנושית — טלפון שגוי, כפילות אפשרית או סתירה בנתונים."
+    },
+    {
+     "id": "flds2G6Yw5kEbOyLU",
+     "name": "לבדיקה",
+     "type": "multipleRecordLinks"
+    },
+    {
+     "id": "fldCbQT9Mn4cEDBSH",
+     "name": "יומן מגעים",
+     "type": "multipleRecordLinks"
+    },
+    {
+     "id": "fldHqCYGXpA5vAZ2z",
+     "name": "clickId",
+     "type": "singleLineText"
+    },
+    {
+     "id": "fldg6oE5YAsckkZdQ",
+     "name": "Field 16",
+     "type": "singleLineText"
+    },
+    {
+     "id": "flduVnsPLlkeEdij0",
+     "name": "אחראי",
+     "type": "singleSelect",
+     "description": "מי אחראי לבצע את הפעולה הבאה. רשימה לאימות מול הצוות."
+    }
+   ]
+  },
+  {
+   "id": "tblctwsCBcoivy8Kf",
+   "name": "לידים - מזרנים",
+   "primaryFieldId": "fldpCnodcBQZ9DSmU",
+   "fields": [
+    {
+     "id": "fldpCnodcBQZ9DSmU",
+     "name": "שם ליד",
+     "type": "singleLineText"
+    },
+    {
+     "id": "fld8TuM1UoHDXkZl4",
+     "name": "תאריך כניסה",
+     "type": "createdTime"
+    },
+    {
+     "id": "fld0WBTmPnA4N6m13",
+     "name": "הערות פנימיות",
+     "type": "multilineText"
+    },
+    {
+     "id": "fldkTjWYeyFh1LLmI",
+     "name": "טלפון",
+     "type": "phoneNumber"
+    },
+    {
+     "id": "fld3mxiO4Lp0xeerL",
+     "name": "מייל",
+     "type": "email"
+    },
+    {
+     "id": "fld7DSXZPW8b5jX3B",
+     "name": "סטטוס",
+     "type": "singleSelect"
+    },
+    {
+     "id": "fldqoE1yqweJAl83L",
+     "name": "סטטוס מכירה",
+     "type": "singleSelect",
+     "description": "איפה הליד עומד במשפך המכירה. משתנה רק בעקבות פעולה אנושית או אירוע ודאי — לא מהסקה אוטומטית. זהה בכל ארבע טבלאות הלידים."
+    },
+    {
+     "id": "fldvQjl2Y5sQrsJsh",
+     "name": "מצב טיפול",
+     "type": "singleSelect",
+     "description": "מה קרה במגע האחרון שלנו מול הליד. מתעדכן על ידי המערכת. זהה בכל ארבע טבלאות הלידים."
+    },
+    {
+     "id": "fldKmWF5wPqtalnwc",
+     "name": "פעולה הבאה",
+     "type": "singleSelect",
+     "description": "מה צריך לקרות עכשיו. נגזר משני הצירים יחד — מצב הטיפול קובע אם יש מגע פתוח, וסטטוס המכירה קובע למה המגע משמש."
+    },
+    {
+     "id": "fldclgFxvIyF0SeCc",
+     "name": "תאריך הטיפול הבא",
+     "type": "date",
+     "description": "התאריך שבו הליד יופיע שוב ברשימת המטלות."
+    },
+    {
+     "id": "fldZLqkLtufTM9EhS",
+     "name": "כמה מזרנים?",
+     "type": "singleLineText"
+    },
+    {
+     "id": "fldtK1G7lqJ9gIYld",
+     "name": "מקור",
+     "type": "singleSelect"
+    },
+    {
+     "id": "fldCp3yT6WBhOcgSF",
+     "name": "סכום עסקה",
+     "type": "currency"
+    },
+    {
+     "id": "fldbP9nzR4q7wkIXF",
+     "name": "כמה מזרנים נרכשו",
+     "type": "number"
+    },
+    {
+     "id": "fldlRniHU2n3HAW1s",
+     "name": "leadId",
+     "type": "singleLineText"
+    },
+    {
+     "id": "fldUEJIYV1x6cXfgK",
+     "name": "טלפון מתוקן",
+     "type": "singleLineText",
+     "description": "הטלפון בפורמט אחיד. השדה המקורי לא משתנה."
+    },
+    {
+     "id": "fldNPiHoa6QkkR2Cs",
+     "name": "שם לפנייה",
+     "type": "singleLineText",
+     "description": "השם הפרטי בלבד, לשימוש בפתיחת הודעה."
+    },
+    {
+     "id": "fldkwNCoXd9De8jHW",
+     "name": "פעילות אחרונה",
+     "type": "date",
+     "description": "מתי קרה הדבר המשמעותי האחרון — מכל כיוון, כולל תגובת הלקוח."
+    },
+    {
+     "id": "fldUZZLhuJwT7DQ2B",
+     "name": "מספר פניות",
+     "type": "number",
+     "description": "כמה פעמים פנינו לליד הזה."
+    },
+    {
+     "id": "fldODggDr1Y6yFkH3",
+     "name": "אין ליצור קשר",
+     "type": "checkbox",
+     "description": "הלקוח ביקש שלא נפנה אליו. עוצר כל פנייה."
+    },
+    {
+     "id": "fldplOHME7EpTTRiy",
+     "name": "דורש בדיקה",
+     "type": "checkbox",
+     "description": "משהו בליד דורש עין אנושית."
+    },
+    {
+     "id": "fld2sd7MmiPFyKj9F",
+     "name": "כמות מתוקנת",
+     "type": "number",
+     "description": "הכמות כמספר. שדה הכמות המקורי הוא טקסט חופשי ומכיל ערכים כמו 5+ או נקודה."
+    },
+    {
+     "id": "fldeh0GA5pmIqzTIm",
+     "name": "יומן מגעים",
+     "type": "multipleRecordLinks"
+    },
+    {
+     "id": "fldyNTU3FKSrU1sxN",
+     "name": "לבדיקה",
+     "type": "multipleRecordLinks"
+    },
+    {
+     "id": "fldK1dmCEtEFoxxV7",
+     "name": "clickId",
+     "type": "singleLineText"
+    },
+    {
+     "id": "fldNFzWIpRBzCNZ9n",
+     "name": "אחראי",
+     "type": "singleSelect",
+     "description": "מי אחראי לבצע את הפעולה הבאה."
+    }
+   ]
+  },
+  {
+   "id": "tblbpggF99sxcIAvc",
+   "name": "לידים - ציוד",
+   "primaryFieldId": "fld7MxzCSWbdeDr3k",
+   "fields": [
+    {
+     "id": "fld7MxzCSWbdeDr3k",
+     "name": "שם מלא",
+     "type": "singleLineText"
+    },
+    {
+     "id": "fldsuHflN5a0ert7D",
+     "name": "טלפון",
+     "type": "singleLineText"
+    },
+    {
+     "id": "fldGDJPacrMWyrsKh",
+     "name": "איפה הסטודיו?",
+     "type": "singleLineText"
+    },
+    {
+     "id": "fld2Yi0JV9yWebLch",
+     "name": "Status",
+     "type": "singleSelect"
+    },
+    {
+     "id": "fldNFoQ8iI0cK0P1M",
+     "name": "באיזה ציוד אתם מתעניינים?",
+     "type": "multilineText"
+    },
+    {
+     "id": "fldt4TQLPhPFDzmU9",
+     "name": "מעניין לשמוע הצעות על רפורמרים?",
+     "type": "singleLineText"
+    },
+    {
+     "id": "fldhBNmUfnmTRVmfI",
+     "name": "תאריך כניסה",
+     "type": "singleLineText"
+    },
+    {
+     "id": "flds6qRegSSryOqGz",
+     "name": "הערות",
+     "type": "multilineText"
+    },
+    {
+     "id": "fldQeNCVGgJlZDfcf",
+     "name": "סכום עסקה",
+     "type": "currency"
+    },
+    {
+     "id": "fldtnpZ6n7V6VASem",
+     "name": "תאריך הטיפול הבא",
+     "type": "date",
+     "description": "התאריך שבו הליד יופיע שוב ברשימת המטלות."
+    },
+    {
+     "id": "fldD2sMEDLdfduD0v",
+     "name": "אחראי",
+     "type": "singleSelect",
+     "description": "מי אחראי לבצע את הפעולה הבאה."
+    },
+    {
+     "id": "fldXxcoJBsUqeBraB",
+     "name": "טלפון מתוקן",
+     "type": "singleLineText",
+     "description": "הטלפון בפורמט אחיד. השדה המקורי לא משתנה."
+    },
+    {
+     "id": "fldSlicckpmiCxHDO",
+     "name": "שם לפנייה",
+     "type": "singleLineText",
+     "description": "השם הפרטי בלבד, לשימוש בפתיחת הודעה."
+    },
+    {
+     "id": "fldMz9xSmjiNRr33v",
+     "name": "פעילות אחרונה",
+     "type": "date",
+     "description": "מתי קרה הדבר המשמעותי האחרון, כולל תגובת הלקוח."
+    },
+    {
+     "id": "fld5aekYwoNL549HG",
+     "name": "מספר פניות",
+     "type": "number",
+     "description": "כמה פעמים פנינו לליד הזה."
+    },
+    {
+     "id": "fld2VFHupjvAnrkuq",
+     "name": "אין ליצור קשר",
+     "type": "checkbox",
+     "description": "הלקוח ביקש שלא נפנה אליו."
+    },
+    {
+     "id": "fld0WypZz0lcRWkkQ",
+     "name": "דורש בדיקה",
+     "type": "checkbox",
+     "description": "משהו בליד דורש עין אנושית."
+    },
+    {
+     "id": "fld9TDFJEieRC9qnQ",
+     "name": "תאריך כניסה מתוקן",
+     "type": "date",
+     "description": "תאריך הכניסה כתאריך אמיתי. בטבלה זו השדה המקורי שמור כטקסט ולכן אי אפשר לסנן לפיו."
+    },
+    {
+     "id": "fld0wbWJhHt7YPdKH",
+     "name": "יומן מגעים",
+     "type": "multipleRecordLinks"
+    },
+    {
+     "id": "fldHWOVSoCyEeP7n4",
+     "name": "לבדיקה",
+     "type": "multipleRecordLinks"
+    },
+    {
+     "id": "fldymsea6KnRMIDit",
+     "name": "סטטוס מכירה",
+     "type": "singleSelect",
+     "description": "איפה הליד עומד במשפך המכירה. משתנה רק בעקבות פעולה אנושית או אירוע ודאי — לא מהסקה אוטומטית. זהה בכל ארבע טבלאות הלידים."
+    },
+    {
+     "id": "fld2Viyb3XVzk18o7",
+     "name": "מצב טיפול",
+     "type": "singleSelect",
+     "description": "מה קרה במגע האחרון שלנו מול הליד. מתעדכן על ידי המערכת. זהה בכל ארבע טבלאות הלידים."
+    },
+    {
+     "id": "fldVHyHFdDTMbxxh3",
+     "name": "פעולה הבאה",
+     "type": "singleSelect",
+     "description": "מה צריך לקרות עכשיו. נגזר משני הצירים יחד — מצב הטיפול קובע אם יש מגע פתוח, וסטטוס המכירה קובע למה המגע משמש."
+    }
+   ]
+  },
+  {
+   "id": "tblJSFUoHoohJCnDL",
+   "name": "לידים - סימפוני",
+   "primaryFieldId": "fldW1wQZiNQYnH7fq",
+   "fields": [
+    {
+     "id": "fldW1wQZiNQYnH7fq",
+     "name": "שם ליד",
+     "type": "singleLineText"
+    },
+    {
+     "id": "fldmYXiRIc0VWhgfd",
+     "name": "שם לפנייה",
+     "type": "singleLineText",
+     "description": "השם הפרטי בלבד, לשימוש בפתיחת הודעה."
+    },
+    {
+     "id": "fldFiDeN0AHCboeeA",
+     "name": "תאריך כניסה",
+     "type": "createdTime"
+    },
+    {
+     "id": "fldwazMxzGfS0dTao",
+     "name": "כמה מיטות?",
+     "type": "number"
+    },
+    {
+     "id": "fldWhB8DhS9k5pwuo",
+     "name": "עסקי או פרטי?",
+     "type": "singleLineText"
+    },
+    {
+     "id": "fldWcCOVH2qpzrsGw",
+     "name": "יש נסיון עם מיטה קלאסית?",
+     "type": "singleSelect"
+    },
+    {
+     "id": "fldonKxwtmxZ89url",
+     "name": "עיר",
+     "type": "singleLineText"
+    },
+    {
+     "id": "fldxlKl8VzA31aBUz",
+     "name": "הערות פנימיות",
+     "type": "multilineText"
+    },
+    {
+     "id": "fldRisoKkKFgfP0fe",
+     "name": "טלפון",
+     "type": "phoneNumber"
+    },
+    {
+     "id": "fldDn3HirlBuFfvgB",
+     "name": "טלפון מתוקן",
+     "type": "singleLineText",
+     "description": "הטלפון בפורמט אחיד. השדה המקורי לא משתנה."
+    },
+    {
+     "id": "fldALGKAaXpZLitkh",
+     "name": "מייל",
+     "type": "email"
+    },
+    {
+     "id": "fldQF75r14cI9YbMn",
+     "name": "אין ליצור קשר",
+     "type": "checkbox",
+     "description": "הלקוח ביקש שלא נפנה אליו."
+    },
+    {
+     "id": "fldE21pLV88ajncW7",
+     "name": "סטטוס",
+     "type": "singleSelect"
+    },
+    {
+     "id": "fldq75FUh8JTF0zot",
+     "name": "סטטוס מכירה",
+     "type": "singleSelect",
+     "description": "איפה הליד עומד במשפך המכירה. משתנה רק בעקבות פעולה אנושית או אירוע ודאי — לא מהסקה אוטומטית. זהה בכל ארבע טבלאות הלידים."
+    },
+    {
+     "id": "fldEXTqRYlcQWMiMe",
+     "name": "מצב טיפול",
+     "type": "singleSelect",
+     "description": "מה קרה במגע האחרון שלנו מול הליד. מתעדכן על ידי המערכת. זהה בכל ארבע טבלאות הלידים."
+    },
+    {
+     "id": "fldNIzJQiZ21S9ndx",
+     "name": "פעולה הבאה",
+     "type": "singleSelect",
+     "description": "מה צריך לקרות עכשיו. נגזר משני הצירים יחד — מצב הטיפול קובע אם יש מגע פתוח, וסטטוס המכירה קובע למה המגע משמש."
+    },
+    {
+     "id": "fldUWspAdAFu9eKFk",
+     "name": "מעוניינים בליווי אישי?",
+     "type": "singleLineText"
+    },
+    {
+     "id": "fldZBonUH1qNIPDNy",
+     "name": "פעילות אחרונה",
+     "type": "date",
+     "description": "מתי קרה הדבר המשמעותי האחרון, כולל תגובת הלקוח."
+    },
+    {
+     "id": "fldFRaNIYyR1r98Xi",
+     "name": "מספר פניות",
+     "type": "number",
+     "description": "כמה פעמים פנינו לליד הזה."
+    },
+    {
+     "id": "fld09a8TrCJ8uMdeJ",
+     "name": "מקור",
+     "type": "singleSelect"
+    },
+    {
+     "id": "fld9Oc0Fc8Bg2gvLb",
+     "name": "סכום עסקה",
+     "type": "currency"
+    },
+    {
+     "id": "fldIeiPlXgq6KoXQb",
+     "name": "כמה מיטות נרכשו",
+     "type": "number"
+    },
+    {
+     "id": "fldSgwKt0en2VEbUY",
+     "name": "leadId",
+     "type": "singleLineText"
+    },
+    {
+     "id": "fldhqmOoKFEECBMOD",
+     "name": "clickId",
+     "type": "singleLineText"
+    },
+    {
+     "id": "fldGBWNVGgzjcZ4gl",
+     "name": "תאריך הטיפול הבא",
+     "type": "date",
+     "description": "התאריך שבו הליד יופיע שוב ברשימת המטלות."
+    },
+    {
+     "id": "fld1LZKj3tAs7LR3n",
+     "name": "אחראי",
+     "type": "singleSelect",
+     "description": "מי אחראי לבצע את הפעולה הבאה."
+    },
+    {
+     "id": "fldmWv0k0Skn7Cu9E",
+     "name": "דורש בדיקה",
+     "type": "checkbox",
+     "description": "משהו בליד דורש עין אנושית."
+    },
+    {
+     "id": "fld24s5wMQzBYsoTU",
+     "name": "לבדיקה",
+     "type": "multipleRecordLinks"
+    },
+    {
+     "id": "fldXEX1MSrdy32cND",
+     "name": "יומן מגעים",
+     "type": "multipleRecordLinks"
+    }
+   ]
+  }
+ ]
+}

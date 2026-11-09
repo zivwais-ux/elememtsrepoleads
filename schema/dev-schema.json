@@ -1,0 +1,3200 @@
+{
+ "base": "appXkWig8vi5kwzAa",
+ "pulledAt": "2026-11-09",
+ "tables": [
+  {
+   "id": "tbl91QjpePM88Zp9p",
+   "name": "לידים",
+   "description": "הטבלה המאוחדת. שורה אחת לכל פנייה, מכל ארבעת קווי המוצר. נבנתה באיחוד של 3.9.2026 מארבע טבלאות המקור, שנשארו במקומן ללא שינוי לצורך הצלבה ו-rollback.",
+   "primaryFieldId": "fldpRaAbMncaePGQB",
+   "fields": [
+    {
+     "id": "fldpRaAbMncaePGQB",
+     "name": "שם ליד",
+     "type": "singleLineText"
+    },
+    {
+     "id": "fldWGKe4vGkx1XVvA",
+     "name": "קו מוצר",
+     "type": "singleSelect",
+     "description": "השדה שמחליף את ארבע הטבלאות.",
+     "config": {
+      "choices": [
+       {
+        "id": "selzcLeAtDHw0btv9",
+        "name": "ויואלדי",
+        "color": "blueLight2"
+       },
+       {
+        "id": "selwYmB7oFJVqgvCR",
+        "name": "מזרנים",
+        "color": "tealLight2"
+       },
+       {
+        "id": "selTureSDEaz0C6Hc",
+        "name": "סימפוני",
+        "color": "purpleLight2"
+       },
+       {
+        "id": "sel0ttjTRLVH7QNFM",
+        "name": "ציוד",
+        "color": "orangeLight2"
+       }
+      ]
+     }
+    },
+    {
+     "id": "fldoaqRvQ5bscM12Q",
+     "name": "תאריך כניסה",
+     "type": "date",
+     "description": "מתי הפנייה נכנסה. שדה תאריך רגיל ולא createdTime — אחרת כל הרשומות המהוגרות היו מקבלות את תאריך ההגירה.",
+     "config": {
+      "dateFormat": {
+       "name": "european",
+       "format": "D/M/YYYY"
+      }
+     }
+    },
+    {
+     "id": "fldKvMdPHQSnLRRHF",
+     "name": "טלפון",
+     "type": "phoneNumber"
+    },
+    {
+     "id": "fldvB6SsLTeFttB1y",
+     "name": "טלפון מתוקן",
+     "type": "singleLineText",
+     "description": "הטלפון בפורמט אחיד לשליחה ולזיהוי כפילויות. השדה המקורי לא משתנה."
+    },
+    {
+     "id": "fldV4Ueosp3y9c7gd",
+     "name": "מייל",
+     "type": "email"
+    },
+    {
+     "id": "flde7KAqyoktWZoPy",
+     "name": "עיר",
+     "type": "singleLineText"
+    },
+    {
+     "id": "fldAiU8m4b0pAYLyY",
+     "name": "עסקי או פרטי?",
+     "type": "singleLineText"
+    },
+    {
+     "id": "fldMY3LA2vVjdPVdB",
+     "name": "סטטוס מכירה",
+     "type": "singleSelect",
+     "description": "איפה הליד עומד במשפך. משתנה רק בעקבות פעולה אנושית או אירוע ודאי.",
+     "config": {
+      "choices": [
+       {
+        "id": "selCDmHlVskMfP0Iv",
+        "name": "חדש",
+        "color": "grayLight2"
+       },
+       {
+        "id": "selCwZiveT6fLmQIB",
+        "name": "ליד פוטנציאלי לפני פגישה",
+        "color": "yellowLight2"
+       },
+       {
+        "id": "selSZUk419I8B3COm",
+        "name": "ליד חם",
+        "color": "orangeLight2"
+       },
+       {
+        "id": "sel5rFhizE9Dt1ZXL",
+        "name": "רלוונטי לעתיד",
+        "color": "blueLight2"
+       },
+       {
+        "id": "seld9J1c7nv7i1IeJ",
+        "name": "נסגרה עסקה",
+        "color": "greenLight2"
+       },
+       {
+        "id": "selmNZhV139JSJqtt",
+        "name": "לא רלוונטי / נפלה עסקה",
+        "color": "redLight2"
+       }
+      ]
+     }
+    },
+    {
+     "id": "fld5KlfuDpeb4PFo8",
+     "name": "מצב טיפול",
+     "type": "singleSelect",
+     "description": "מה קרה במגע האחרון מול הליד. מתעדכן על ידי המערכת.",
+     "config": {
+      "choices": [
+       {
+        "id": "selI4ZU4gq0DcYEkZ",
+        "name": "ממתין לפנייה",
+        "color": "grayLight2"
+       },
+       {
+        "id": "selF6dqi1Epc6g7Q2",
+        "name": "ממתין לתגובה",
+        "color": "blueLight2"
+       },
+       {
+        "id": "sel6S5MdAkdiQRfcj",
+        "name": "נשלחה הודעה",
+        "color": "tealLight2"
+       },
+       {
+        "id": "selXzPe47PG0OrLgA",
+        "name": "לא ענה",
+        "color": "pinkLight2"
+       },
+       {
+        "id": "selHgiWeNAZ6ex4CO",
+        "name": "התקבלה תגובה",
+        "color": "purpleLight2"
+       },
+       {
+        "id": "selwNl1dCno3rsaI5",
+        "name": "לחזור אליו",
+        "color": "yellowLight2"
+       },
+       {
+        "id": "selZpANC1SLIQTWx5",
+        "name": "תואם שיחת אפיון",
+        "color": "greenLight2"
+       },
+       {
+        "id": "selbvxVFKCsOqGTvd",
+        "name": "בטיפול",
+        "color": "cyanLight2"
+       },
+       {
+        "id": "selQudffdDcFv8py1",
+        "name": "ממתין למועד",
+        "color": "orangeLight2"
+       },
+       {
+        "id": "sel474Gc1rBgHnp62",
+        "name": "הסתיים",
+        "color": "grayLight1"
+       }
+      ]
+     }
+    },
+    {
+     "id": "fldoy2yHibIG89U5G",
+     "name": "פעולה הבאה",
+     "type": "singleSelect",
+     "description": "מה צריך לקרות עכשיו. נגזר משני הצירים. אין ליצור קשר עוקף הכל.",
+     "config": {
+      "choices": [
+       {
+        "id": "selzEhavtLqNdNQWL",
+        "name": "להשיב ללקוח",
+        "color": "redLight2"
+       },
+       {
+        "id": "selkU3Nj9ho1IAvQH",
+        "name": "לשלוח הודעה",
+        "color": "cyanLight2"
+       },
+       {
+        "id": "selYElUdrjFS9N7Gs",
+        "name": "להתקשר",
+        "color": "blueLight2"
+       },
+       {
+        "id": "selUSHcfWZcFLREke",
+        "name": "לתאם פגישה",
+        "color": "greenLight2"
+       },
+       {
+        "id": "selrNQtWMaIVk8URr",
+        "name": "לקיים פגישה",
+        "color": "tealLight2"
+       },
+       {
+        "id": "selDziC2RWJHNdeEs",
+        "name": "לבדוק הצעה",
+        "color": "purpleLight2"
+       },
+       {
+        "id": "selkBzD5gXjrVb0Dh",
+        "name": "לחזור בתאריך",
+        "color": "orangeLight2"
+       },
+       {
+        "id": "selmnoa1DAxyB1ZYP",
+        "name": "אין פעולה",
+        "color": "grayLight2"
+       }
+      ]
+     }
+    },
+    {
+     "id": "fldMiSAOsPZ8fYE6f",
+     "name": "תאריך הטיפול הבא",
+     "type": "date",
+     "description": "התאריך שבו הליד יופיע שוב ברשימת המטלות.",
+     "config": {
+      "dateFormat": {
+       "name": "european",
+       "format": "D/M/YYYY"
+      }
+     }
+    },
+    {
+     "id": "fldvTSgqSbc83pn4n",
+     "name": "פעילות אחרונה",
+     "type": "date",
+     "description": "מתי קרה הדבר המשמעותי האחרון, מכל כיוון, כולל תגובת הלקוח.",
+     "config": {
+      "dateFormat": {
+       "name": "european",
+       "format": "D/M/YYYY"
+      }
+     }
+    },
+    {
+     "id": "fld5ophHFlD0xoMos",
+     "name": "הערות פנימיות",
+     "type": "multilineText"
+    },
+    {
+     "id": "fld11IWYjoDQycO4v",
+     "name": "מספר פניות",
+     "type": "number",
+     "description": "כמה פעמים פנינו. ריק = לא ידוע, שמור לנתוני עבר בלבד.",
+     "config": {
+      "precision": 0
+     }
+    },
+    {
+     "id": "fldc9BJfqXLxwPlJ1",
+     "name": "אחראי",
+     "type": "singleSelect",
+     "config": {
+      "choices": [
+       {
+        "id": "seloPmlNWEDizoZCb",
+        "name": "בר",
+        "color": "blueLight2"
+       },
+       {
+        "id": "selbh3WaP4gJfLiAw",
+        "name": "עומר",
+        "color": "greenLight2"
+       },
+       {
+        "id": "sel73pun2Mn1TUXzP",
+        "name": "טל",
+        "color": "purpleLight2"
+       },
+       {
+        "id": "selnsL2c6CYukfEvr",
+        "name": "שלי",
+        "color": "orangeLight2"
+       }
+      ]
+     }
+    },
+    {
+     "id": "fldMdVhsvIUcSmTX8",
+     "name": "אין ליצור קשר",
+     "type": "checkbox",
+     "description": "עוצר כל פנייה, אוטומטית וידנית. לעולם אינו מבוטל אוטומטית.",
+     "config": {
+      "icon": "xCheckbox",
+      "color": "redBright"
+     }
+    },
+    {
+     "id": "fldhU70kjBUhQPwCp",
+     "name": "דורש בדיקה",
+     "type": "checkbox",
+     "description": "משהו בליד דורש עין אנושית.",
+     "config": {
+      "icon": "flag",
+      "color": "orangeBright"
+     }
+    },
+    {
+     "id": "fldanMrw7VXYVS9Te",
+     "name": "כמות",
+     "type": "singleLineText",
+     "description": "הכמות כפי שנמסרה, טקסט חופשי."
+    },
+    {
+     "id": "fldvrsoDbTXuVe4iX",
+     "name": "כמות מתוקנת",
+     "type": "number",
+     "config": {
+      "precision": 0
+     }
+    },
+    {
+     "id": "fld7b3QrXuipNnwSn",
+     "name": "כמה נרכשו",
+     "type": "number",
+     "config": {
+      "precision": 1
+     }
+    },
+    {
+     "id": "fldoyl9VMjVkiK9bI",
+     "name": "סכום עסקה",
+     "type": "currency",
+     "config": {
+      "precision": 1,
+      "symbol": "₪"
+     }
+    },
+    {
+     "id": "fldjDM31QcXiwJ9P2",
+     "name": "פירוט המוצר",
+     "type": "multilineText",
+     "description": "מה בדיוק מבוקש. שדה גנרי שישמש גם קווי מוצר עתידיים."
+    },
+    {
+     "id": "fld9RBj2U5eUzOToz",
+     "name": "מעניין לשמוע הצעות על רפורמרים?",
+     "type": "singleLineText",
+     "description": "אות מכירה צולבת."
+    },
+    {
+     "id": "fldpkYE7hXtH95F3C",
+     "name": "יש ניסיון עם מיטה קלאסית?",
+     "type": "singleLineText"
+    },
+    {
+     "id": "fldZIjcqVVz9UzA4n",
+     "name": "מעוניינים בליווי אישי?",
+     "type": "singleLineText"
+    },
+    {
+     "id": "fld0WZ6DyE9iXPMzr",
+     "name": "מקור",
+     "type": "singleSelect",
+     "config": {
+      "choices": [
+       {
+        "id": "selH2KLkWoohkUNNP",
+        "name": "Meta",
+        "color": "blueLight2"
+       },
+       {
+        "id": "selKL52uThpTXVQ4C",
+        "name": "Tiktok",
+        "color": "cyanLight2"
+       },
+       {
+        "id": "selu9cwxVccvNUytu",
+        "name": "Google / Website",
+        "color": "tealLight2"
+       },
+       {
+        "id": "selHYwVAW9vPSry0u",
+        "name": "Organic",
+        "color": "greenLight2"
+       }
+      ]
+     }
+    },
+    {
+     "id": "flduCDzBXtmukPTkf",
+     "name": "leadId",
+     "type": "singleLineText"
+    },
+    {
+     "id": "fldSH3LH4YfOWNRsf",
+     "name": "clickId",
+     "type": "singleLineText",
+     "description": "ריק בכל הרשומות — האטריביושן שבור במקור. נשמר לשימוש עתידי."
+    },
+    {
+     "id": "fldxK5D4AGvGRv5ai",
+     "name": "סטטוס מקורי",
+     "type": "singleLineText",
+     "description": "ערך שדה הסטטוס הישן כפי שהיה, כטקסט. מידע גולמי שאינו נדרס."
+    },
+    {
+     "id": "fldpBArnJe2f074Oa",
+     "name": "מזהה מקורי",
+     "type": "singleLineText",
+     "description": "מזהה הטבלה והרשומה שממנה הגיעה. בסיס להצלבה, לבניית הקישורים ול-rollback."
+    },
+    {
+     "id": "fldhYgVoAC8bG7aRQ",
+     "name": "יומן מגעים",
+     "type": "multipleRecordLinks",
+     "description": "כל המגעים מול הליד. שדה קישור יחיד שמחליף את ארבעת שדות הקישור לפי קו מוצר.",
+     "config": {
+      "linkedTableId": "tblvlb654Vb0cOfZL",
+      "isReversed": false,
+      "prefersSingleRecordLink": false,
+      "inverseLinkFieldId": "fldbgPsaQUpcNWknD"
+     }
+    },
+    {
+     "id": "fld9B64RK36SQHEiS",
+     "name": "לבדיקה",
+     "type": "multipleRecordLinks",
+     "description": "בעיות פתוחות שדורשות הכרעה אנושית.",
+     "config": {
+      "linkedTableId": "tblJU5VbqBSktB41r",
+      "isReversed": false,
+      "prefersSingleRecordLink": false,
+      "inverseLinkFieldId": "fldnOGO4AgkAZx3mW"
+     }
+    },
+    {
+     "id": "fldbmFm4a62391oGb",
+     "name": "שם לפנייה",
+     "type": "singleLineText",
+     "description": "השם הפרטי בלבד, לשימוש בפתיחת הודעה."
+    },
+    {
+     "id": "fldFCNDsBGoHYWjGh",
+     "name": "מועד שנקבע",
+     "type": "dateTime",
+     "description": "התחייבות עתידית שסוכמה עם הלקוח. מ-8.9.2026 זהו שדה שהמנוע מתחזק, לא שדה קלט: המקור הוא \"מועד שנקבע\" בשורת יומן המגעים, ו-Interaction Processing מעתיק מהשורה האחרונה שנושאת מועד. שינוי או ביטול נעשים על ידי תיעוד מגע חדש, לא בעריכת השדה. נשאר פעיל גם אחרי שהמועד עבר — נסגר רק כשמתקיים מגע מהסוג שהתחייבנו לו במועד או אחריו. הוסר מרשימת המעקב של Lead Inputs Changed כדי למנוע לולאת הזנה עצמית.",
+     "config": {
+      "dateFormat": {
+       "name": "european",
+       "format": "D/M/YYYY"
+      },
+      "timeFormat": {
+       "name": "24hour",
+       "format": "HH:mm"
+      },
+      "timeZone": "Asia/Jerusalem"
+     }
+    },
+    {
+     "id": "fldALYDQmkTOW3WJu",
+     "name": "סוג ההתחייבות",
+     "type": "singleSelect",
+     "description": "מה בדיוק סוכם למועד שנקבע. קובע את הפעולה הבאה במצב ממתין למועד — מיפוי ישיר, ללא הסקה. מ-8.9.2026 שדה שהמנוע מתחזק: המקור הוא \"סוג ההתחייבות\" בשורת יומן המגעים. הוסר מרשימת המעקב של Lead Inputs Changed.",
+     "config": {
+      "choices": [
+       {
+        "id": "selGQRWagLA1xozLg",
+        "name": "פגישה או התנסות",
+        "color": "orangeLight2"
+       },
+       {
+        "id": "selilr2kEITKhUfam",
+        "name": "שיחה",
+        "color": "blueLight2"
+       },
+       {
+        "id": "selj3gWO5X6A1EBpe",
+        "name": "חזרה שהלקוח ביקש",
+        "color": "yellowLight2"
+       }
+      ]
+     }
+    },
+    {
+     "id": "fldIZXrS7ppfwzlUB",
+     "name": "פניות שלא תועדו",
+     "type": "number",
+     "description": "בסיס פתיחה — כמה פניות יוצאות אנחנו מאמינים שקרו ומעולם לא תועדו ביומן. מספר פניות = הבסיס הזה + ספירת היומן. בלידים חדשים נשאר ריק, ואז המספר נגזר במלואו מהיומן.",
+     "config": {
+      "precision": 0
+     }
+    },
+    {
+     "id": "fldMGDtPtLRrxfsZ9",
+     "name": "סיבת תקיעה",
+     "type": "multipleSelects",
+     "description": "דוח בלבד. נכתב פעם ביום על ידי Lead Stuck Report ומתנקה מעצמו כשהסיבה נעלמת. לא משנה סטטוס, לא פוסל ולא מזיז תאריך — התיישנות אינה החלטה עסקית של מכונה. אין להוסיף לרשימת המעקב של Lead Inputs Changed.",
+     "config": {
+      "choices": [
+       {
+        "id": "selqrYv6HKOwAx2gH",
+        "name": "תאריך עבר",
+        "color": "redLight2"
+       },
+       {
+        "id": "seliPGHkwfB8DV9t0",
+        "name": "ללא אחראי",
+        "color": "orangeLight2"
+       },
+       {
+        "id": "selYiOz6iw0kjqMf1",
+        "name": "ללא תאריך",
+        "color": "yellowLight2"
+       },
+       {
+        "id": "selhfo2PQAN9YcSQK",
+        "name": "ללא פעילות",
+        "color": "grayLight2"
+       }
+      ]
+     }
+    },
+    {
+     "id": "fldeM9Ce7N7mK5QJo",
+     "name": "סוג לקוח",
+     "type": "singleSelect",
+     "description": "מנורמל בקליטה מהטקסט החופשי של הטופס (עסקי או פרטי?). ערך חד-משמעי לעדיפות ולניתוב. לא ידוע = אין ראיה, ואז לא נקבעת עדיפות. כמות 1 לבדה אינה ראיה לפרטי. ריק בכל ה-legacy בכוונה.",
+     "config": {
+      "choices": [
+       {
+        "id": "selfaZQMsN3HzDhAI",
+        "name": "עסקי",
+        "color": "blueLight2"
+       },
+       {
+        "id": "sely9A87YEZ8fJPNB",
+        "name": "פרטי",
+        "color": "tealLight2"
+       },
+       {
+        "id": "sel4osOMQ0makOhJL",
+        "name": "לא ידוע",
+        "color": "grayLight2"
+       }
+      ]
+     }
+    },
+    {
+     "id": "fldUUzkLcocMeHqTJ",
+     "name": "טיפול אישי",
+     "type": "checkbox",
+     "description": "בר או עומר מטפלים בליד אישית, בדרך כלל מהמספר האישי. חוסם שליחה אוטומטית בלבד. לא משנה סטטוס מכירה, מצב טיפול או פעולה הבאה, ולא מוציא את הליד מדוח התקועים. אדם מסמן, אדם מנקה.",
+     "config": {
+      "icon": "star",
+      "color": "purpleBright"
+     }
+    },
+    {
+     "id": "fldNzBsG2PiJuu146",
+     "name": "טריגר עתידי",
+     "type": "singleLineText",
+     "description": "האירוע שאחריו הליד רלוונטי: סיום קורס, חתימת חוזה, שיפוץ, מכרז. טקסט חופשי, בלי תאריך פיקטיבי. מועד שנקבע נשאר רק למועד אמיתי שסוכם. איך ליד עם טריגר בלי תאריך חוזר לבדיקה פנימית — טרם הוחלט."
+    },
+    {
+     "id": "fldrAP6pYmclXbGsw",
+     "name": "עדיפות",
+     "type": "formula",
+     "description": "נוסחה, לא אוטומציה. מדרגות בר: 1 = עסקי, רפורמרים (ויואלדי/סימפוני), 5 ומעלה · 2 = עסקי, מזרנים, מעל 15 · 3 = עסקי, מזרנים, 8–15. ריק כשסוג לקוח ריק או לא ידוע, ולכן ריק בכל ה-legacy. כמות לבדה לעולם לא קובעת עדיפות.",
+     "config": {
+      "isValid": true,
+      "formula": "IF(OR(NOT({fldeM9Ce7N7mK5QJo}), {fldeM9Ce7N7mK5QJo}='לא ידוע'), BLANK(), IF(AND({fldeM9Ce7N7mK5QJo}='עסקי', OR({fldWGKe4vGkx1XVvA}='ויואלדי', {fldWGKe4vGkx1XVvA}='סימפוני'), {fldvrsoDbTXuVe4iX}>=5), 1, IF(AND({fldeM9Ce7N7mK5QJo}='עסקי', {fldWGKe4vGkx1XVvA}='מזרנים', {fldvrsoDbTXuVe4iX}>15), 2, IF(AND({fldeM9Ce7N7mK5QJo}='עסקי', {fldWGKe4vGkx1XVvA}='מזרנים', {fldvrsoDbTXuVe4iX}>=8, {fldvrsoDbTXuVe4iX}<=15), 3, BLANK()))))",
+      "referencedFieldIds": [
+       "fldeM9Ce7N7mK5QJo",
+       "fldWGKe4vGkx1XVvA",
+       "fldvrsoDbTXuVe4iX"
+      ],
+      "result": {
+       "type": "number",
+       "options": {
+        "precision": 0
+       }
+      }
+     }
+    },
+    {
+     "id": "fldB3xoi8ShY3amIS",
+     "name": "המלצת מערכת",
+     "type": "formula",
+     "description": "נוסחה, תצוגה בלבד. המערכת מציעה, אדם מחליט. לפי ההגדרה שנסגרה 7.9.2026: ליד הופך לחם כשנוצרת התחייבות ממשית לפגישה או התנסות, לא כשהיא מתקיימת. סטטוס מכירה לעולם לא משתנה אוטומטית. ריק בכל ה-legacy (אין שם סוג התחייבות).",
+     "config": {
+      "isValid": true,
+      "formula": "IF(AND({fldALYDQmkTOW3WJu}='פגישה או התנסות', OR({fldMY3LA2vVjdPVdB}='חדש', {fldMY3LA2vVjdPVdB}='ליד פוטנציאלי לפני פגישה')), 'לשקול העברה לליד חם', BLANK())",
+      "referencedFieldIds": [
+       "fldALYDQmkTOW3WJu",
+       "fldMY3LA2vVjdPVdB"
+      ],
+      "result": {
+       "type": "singleLineText"
+      }
+     }
+    },
+    {
+     "id": "fldSX1NC6nZDtmkkP",
+     "name": "הודעות",
+     "type": "multipleRecordLinks",
+     "config": {
+      "linkedTableId": "tblrpzxL73Rbhnhty",
+      "isReversed": false,
+      "prefersSingleRecordLink": false,
+      "inverseLinkFieldId": "flduu6ILksC0UWJyj"
+     }
+    },
+    {
+     "id": "fldo5pnpCjaGsmDtw",
+     "name": "סבב נוכחי",
+     "type": "number",
+     "description": "פלט של המנוע: באיזה סבב מעקב הליד נמצא ברצף הנוכחי. סבב נפתח רק אחרי שהודעת הסבב הקודם נשלחה בהצלחה — כמה שיחות ללא מענה לפני שההודעה יצאה נשארות באותו סבב. כל השיחות נרשמות ביומן ונספרות ב\"מספר פניות\"; מה שלא מתקדם הוא לוח המעקב בלבד. 0 = לפני השיחה הראשונה. תגובה נכנסת, שיחה שנענתה או פגישה שהתקיימה מאפסות את הרצף. מנסח ההודעות קורא מכאן ולא מחשב בעצמו. אין להוסיף לרשימת המעקב של Lead Inputs Changed.",
+     "config": {
+      "precision": 0
+     }
+    },
+    {
+     "id": "fldlAAoEN2AJ9YBZ7",
+     "name": "מועד שיחה מוצע",
+     "type": "dateTime",
+     "description": "מחושב בקליטה לפי הכלל של בר: פנייה לפני 16:00 → שיחה בעוד שעתיים, אחרי כן → מחר בבוקר. בתוך חלונות השליחה, עד הקיבולת היומית. הצעה לצוות, לא התחייבות של המנוע. נכתב רק אם ריק. ריק בכל ה-legacy.",
+     "config": {
+      "dateFormat": {
+       "name": "european",
+       "format": "D/M/YYYY"
+      },
+      "timeFormat": {
+       "name": "24hour",
+       "format": "HH:mm"
+      },
+      "timeZone": "Asia/Jerusalem"
+     }
+    },
+    {
+     "id": "fldNbWZuvHafv2yUM",
+     "name": "מצב טיפול · תצוגה",
+     "type": "formula",
+     "description": "תצוגה בלבד של שדה המנוע. הממשק מציג את זה; השדה האמיתי לא מופיע בממשק.",
+     "config": {
+      "isValid": true,
+      "formula": "{fld5KlfuDpeb4PFo8}",
+      "referencedFieldIds": [
+       "fld5KlfuDpeb4PFo8"
+      ],
+      "result": {
+       "type": "singleLineText"
+      }
+     }
+    },
+    {
+     "id": "fldbUrgFE6ceaVGBE",
+     "name": "פעולה הבאה · תצוגה",
+     "type": "formula",
+     "description": "תצוגה בלבד של שדה המנוע.",
+     "config": {
+      "isValid": true,
+      "formula": "{fldoy2yHibIG89U5G}",
+      "referencedFieldIds": [
+       "fldoy2yHibIG89U5G"
+      ],
+      "result": {
+       "type": "singleLineText"
+      }
+     }
+    },
+    {
+     "id": "fldPU348iam0SVBhz",
+     "name": "תאריך הטיפול הבא · תצוגה",
+     "type": "formula",
+     "description": "תצוגה בלבד של שדה המנוע.",
+     "config": {
+      "isValid": true,
+      "formula": "{fldMiSAOsPZ8fYE6f}",
+      "referencedFieldIds": [
+       "fldMiSAOsPZ8fYE6f"
+      ],
+      "result": {
+       "type": "date",
+       "options": {
+        "dateFormat": {
+         "name": "us",
+         "format": "M/D/YYYY"
+        }
+       }
+      }
+     }
+    },
+    {
+     "id": "fldSp1rWow2EDhRPC",
+     "name": "סבב נוכחי · תצוגה",
+     "type": "formula",
+     "description": "תצוגה בלבד של שדה המנוע.",
+     "config": {
+      "isValid": true,
+      "formula": "{fldo5pnpCjaGsmDtw}",
+      "referencedFieldIds": [
+       "fldo5pnpCjaGsmDtw"
+      ],
+      "result": {
+       "type": "number",
+       "options": {
+        "precision": 0
+       }
+      }
+     }
+    },
+    {
+     "id": "fldn6E1Yr9BzXihrL",
+     "name": "מספר פניות · תצוגה",
+     "type": "formula",
+     "description": "תצוגה בלבד של שדה המנוע.",
+     "config": {
+      "isValid": true,
+      "formula": "{fld11IWYjoDQycO4v}",
+      "referencedFieldIds": [
+       "fld11IWYjoDQycO4v"
+      ],
+      "result": {
+       "type": "number",
+       "options": {
+        "precision": 0
+       }
+      }
+     }
+    },
+    {
+     "id": "fldSLgiPqkHr7sd3Y",
+     "name": "פעילות אחרונה · תצוגה",
+     "type": "formula",
+     "description": "תצוגה בלבד של שדה המנוע.",
+     "config": {
+      "isValid": true,
+      "formula": "IF({fldvTSgqSbc83pn4n}, IF(IS_SAME({fldvTSgqSbc83pn4n}, TODAY(), 'day'), \"היום\", DATETIME_FORMAT({fldvTSgqSbc83pn4n}, 'D.M.YYYY')), \"\")",
+      "referencedFieldIds": [
+       "fldvTSgqSbc83pn4n"
+      ],
+      "result": {
+       "type": "singleLineText"
+      }
+     }
+    },
+    {
+     "id": "fldHCzqcYd8vQUL7l",
+     "name": "סיבת תקיעה · תצוגה",
+     "type": "formula",
+     "description": "תצוגה בלבד של דוח התקועים.",
+     "config": {
+      "isValid": true,
+      "formula": "ARRAYJOIN({fldMGDtPtLRrxfsZ9}, \" · \")",
+      "referencedFieldIds": [
+       "fldMGDtPtLRrxfsZ9"
+      ],
+      "result": {
+       "type": "singleLineText"
+      }
+     }
+    },
+    {
+     "id": "fldMbD7vv9rXaTcUp",
+     "name": "שיחה מוצעת",
+     "type": "formula",
+     "description": "תצוגה בלבד, בשעון ישראל. פנימי לצוות, לעולם לא ללקוח. מוצג רק כשעוד אין לליד תאריך טיפול או מועד שנקבע — ברגע שיש מועד אמיתי ההצעה מהקליטה הופכת למטעה ולכן מתרוקנת.",
+     "config": {
+      "isValid": true,
+      "formula": "IF(OR({fldMiSAOsPZ8fYE6f}, {fldFCNDsBGoHYWjGh}), \"\", IF({fldlAAoEN2AJ9YBZ7}, DATETIME_FORMAT(SET_TIMEZONE({fldlAAoEN2AJ9YBZ7}, 'Asia/Jerusalem'), 'D.M HH:mm'), \"\"))",
+      "referencedFieldIds": [
+       "fldMiSAOsPZ8fYE6f",
+       "fldFCNDsBGoHYWjGh",
+       "fldlAAoEN2AJ9YBZ7"
+      ],
+      "result": {
+       "type": "singleLineText"
+      }
+     }
+    },
+    {
+     "id": "fldtjmzdEtH7LH4pz",
+     "name": "דורש בדיקה · תצוגה",
+     "type": "formula",
+     "description": "תצוגה בלבד.",
+     "config": {
+      "isValid": true,
+      "formula": "IF({fldhU70kjBUhQPwCp}, \"כן\", \"\")",
+      "referencedFieldIds": [
+       "fldhU70kjBUhQPwCp"
+      ],
+      "result": {
+       "type": "singleLineText"
+      }
+     }
+    },
+    {
+     "id": "fld5QbOXhoogr6CTX",
+     "name": "הלקוח כתב",
+     "type": "multilineText",
+     "description": "הטקסט האחרון שהלקוח כתב. המקור העתידי: קליטת WhatsApp נכנס → יומן מגעים → Interaction Processing. עד שהקליטה מחוברת השדה ריק ואף תהליך לא כותב אליו (שחר, 7.9.2026)."
+    },
+    {
+     "id": "fldNfb4sMtvxfSvlt",
+     "name": "מצבי הודעות",
+     "type": "multipleLookupValues",
+     "description": "מצבי כל ההודעות של הליד. משמש את הנוסחאות ״יש הודעה ממתינה״ ו״יש חריגה בהודעות״ כדי שרשימות הבוקר יהיו רשימות של לידים.",
+     "config": {
+      "isValid": true,
+      "recordLinkFieldId": "fldSX1NC6nZDtmkkP",
+      "fieldIdInLinkedTable": "fldGIvyveO1m9LJxm",
+      "result": {
+       "type": "singleSelect",
+       "options": {
+        "choices": [
+         {
+          "id": "sel4VnNz4cBsprL2g",
+          "name": "טיוטה",
+          "color": "grayLight2"
+         },
+         {
+          "id": "sel77I9vsxejrrJMn",
+          "name": "ממתין לאישור",
+          "color": "yellowLight2"
+         },
+         {
+          "id": "selimno2LgO326q7A",
+          "name": "מאושר",
+          "color": "blueLight2"
+         },
+         {
+          "id": "selVI3sWGYo8k4PWt",
+          "name": "נשלח",
+          "color": "greenLight2"
+         },
+         {
+          "id": "seldywhA2ITWRNgs0",
+          "name": "נחסם",
+          "color": "redLight2"
+         },
+         {
+          "id": "selIkDsnyMuavLidP",
+          "name": "נדחה",
+          "color": "grayLight1"
+         },
+         {
+          "id": "selSbewiFFfXCXXCI",
+          "name": "ממתין לשליחה",
+          "color": "orangeLight2"
+         },
+         {
+          "id": "selmZMPNcjJxttQ9f",
+          "name": "שולח",
+          "color": "cyanLight2"
+         },
+         {
+          "id": "selKdpcjrNXwu3Ath",
+          "name": "דורש בירור",
+          "color": "pinkLight2"
+         },
+         {
+          "id": "selXTpm3ZorvMtYZM",
+          "name": "התיישן",
+          "color": "tealLight2"
+         }
+        ]
+       }
+      }
+     }
+    },
+    {
+     "id": "fldRCV8EPeaajyvLx",
+     "name": "מצבי בדיקות",
+     "type": "multipleLookupValues",
+     "description": "מצבי שורות ״לבדיקה״ של הליד. לנוסחת ״בדיקות פתוחות״.",
+     "config": {
+      "isValid": true,
+      "recordLinkFieldId": "fld9B64RK36SQHEiS",
+      "fieldIdInLinkedTable": "fldp3f5gTr4IxACvo",
+      "result": {
+       "type": "singleSelect",
+       "options": {
+        "choices": [
+         {
+          "id": "selrGc2wXLBxXbGim",
+          "name": "פתוח",
+          "color": "redLight2"
+         },
+         {
+          "id": "selzJVcystIoVD3vb",
+          "name": "בטיפול",
+          "color": "yellowLight2"
+         },
+         {
+          "id": "selUywZMGFGYwlcsX",
+          "name": "טופל",
+          "color": "greenLight2"
+         },
+         {
+          "id": "seln18t56ZcgQ2TyA",
+          "name": "לא רלוונטי",
+          "color": "grayLight2"
+         }
+        ]
+       }
+      }
+     }
+    },
+    {
+     "id": "fldQbuFSBBTxLis8N",
+     "name": "יש הודעה ממתינה",
+     "type": "formula",
+     "description": "כן כשלליד יש הודעה במצב ״ממתין לאישור״. לרשימות הבוקר, כדי שכל שורה תפתח את ה-Lead Workspace.",
+     "config": {
+      "isValid": true,
+      "formula": "IF(FIND(\"ממתין לאישור\", ARRAYJOIN({fldNfb4sMtvxfSvlt}, \",\")), \"כן\", \"\")",
+      "referencedFieldIds": [
+       "fldNfb4sMtvxfSvlt"
+      ],
+      "result": {
+       "type": "singleLineText"
+      }
+     }
+    },
+    {
+     "id": "fldisn4E5Ue4drL8T",
+     "name": "יש חריגה בהודעות",
+     "type": "formula",
+     "description": "כן כשלליד יש הודעה ״דורש בירור״ או ״נחסם״. לרשימת החריגות.",
+     "config": {
+      "isValid": true,
+      "formula": "IF(OR(FIND(\"דורש בירור\", ARRAYJOIN({fldNfb4sMtvxfSvlt}, \",\")), FIND(\"נחסם\", ARRAYJOIN({fldNfb4sMtvxfSvlt}, \",\"))), \"כן\", \"\")",
+      "referencedFieldIds": [
+       "fldNfb4sMtvxfSvlt"
+      ],
+      "result": {
+       "type": "singleLineText"
+      }
+     }
+    },
+    {
+     "id": "fldVCL6xYNzEgzgVm",
+     "name": "בדיקות פתוחות",
+     "type": "formula",
+     "description": "כן כשלליד שורת ״לבדיקה״ פתוחה. לרשימת החריגות.",
+     "config": {
+      "isValid": true,
+      "formula": "IF(FIND(\"פתוח\", ARRAYJOIN({fldRCV8EPeaajyvLx}, \",\")), \"כן\", \"\")",
+      "referencedFieldIds": [
+       "fldRCV8EPeaajyvLx"
+      ],
+      "result": {
+       "type": "singleLineText"
+      }
+     }
+    },
+    {
+     "id": "fldvRb0uZu1bRKp3u",
+     "name": "יש חריגה",
+     "type": "formula",
+     "description": "כן כשהליד דורש בדיקה, או יש לו הודעה נחסמת/דורשת בירור, או בדיקה פתוחה. לרשימת החריגות בתור הבוקר.",
+     "config": {
+      "isValid": true,
+      "formula": "IF(OR({fldhU70kjBUhQPwCp}, {fldisn4E5Ue4drL8T} = \"כן\", {fldVCL6xYNzEgzgVm} = \"כן\"), \"כן\", \"\")",
+      "referencedFieldIds": [
+       "fldhU70kjBUhQPwCp",
+       "fldisn4E5Ue4drL8T",
+       "fldVCL6xYNzEgzgVm"
+      ],
+      "result": {
+       "type": "singleLineText"
+      }
+     }
+    },
+    {
+     "id": "fldxplqe7okD0DOHn",
+     "name": "כותרת",
+     "type": "formula",
+     "description": "משפט תצוגה: שם · קו מוצר · כמות · עיר · עסקי/פרטי. הכותרת של הליד בכל מסך.",
+     "config": {
+      "isValid": true,
+      "formula": "{fldpRaAbMncaePGQB} & IF({fldWGKe4vGkx1XVvA}, \" · \" & {fldWGKe4vGkx1XVvA}, \"\") & IF({fldvrsoDbTXuVe4iX}, \" · \" & IF({fldvrsoDbTXuVe4iX} = 1, SWITCH({fldWGKe4vGkx1XVvA}, \"מזרנים\", \"מזרן אחד\", \"ציוד\", \"פריט אחד\", \"רפורמר אחד\"), {fldvrsoDbTXuVe4iX} & \" \" & SWITCH({fldWGKe4vGkx1XVvA}, \"מזרנים\", \"מזרנים\", \"ציוד\", \"פריטים\", \"רפורמרים\")), \"\") & IF({flde7KAqyoktWZoPy}, \" · \" & {flde7KAqyoktWZoPy}, \"\") & IF(AND({fldeM9Ce7N7mK5QJo}, {fldeM9Ce7N7mK5QJo} != \"לא ידוע\"), \" · \" & {fldeM9Ce7N7mK5QJo}, \"\")",
+      "referencedFieldIds": [
+       "fldpRaAbMncaePGQB",
+       "fldWGKe4vGkx1XVvA",
+       "fldvrsoDbTXuVe4iX",
+       "flde7KAqyoktWZoPy",
+       "fldeM9Ce7N7mK5QJo"
+      ],
+      "result": {
+       "type": "singleLineText"
+      }
+     }
+    },
+    {
+     "id": "fldwVIpy8AKP5cORL",
+     "name": "מצב",
+     "type": "formula",
+     "description": "מצב הטיפול במילים של הצוות. אין ליצור קשר הוא מצב מפורש. תצוגה בלבד.",
+     "config": {
+      "isValid": true,
+      "formula": "IF({fldMdVhsvIUcSmTX8}, \"אין ליצור קשר\", SWITCH({fld5KlfuDpeb4PFo8}, \"ממתין לפנייה\", \"טרם נוצר קשר\", \"ממתין לתגובה\", \"ממתינים ללקוח\", \"התקבלה תגובה\", \"הלקוח חזר — מחכה לנו\", \"בטיפול\", \"בטיפול\", \"ממתין למועד\", \"מועד נקבע\", \"הסתיים\", \"הטיפול הסתיים\", {fld5KlfuDpeb4PFo8} & \"\"))",
+      "referencedFieldIds": [
+       "fldMdVhsvIUcSmTX8",
+       "fld5KlfuDpeb4PFo8"
+      ],
+      "result": {
+       "type": "singleLineText"
+      }
+     }
+    },
+    {
+     "id": "fldDjuNRRp5iMudS8",
+     "name": "מועד",
+     "type": "formula",
+     "description": "מועד הפעולה הבאה במילים: היום · מחר · באיחור מ-D.M · D.M. תצוגה בלבד.",
+     "config": {
+      "isValid": true,
+      "formula": "IF({fldMiSAOsPZ8fYE6f}, IF(IS_SAME({fldMiSAOsPZ8fYE6f}, TODAY(), 'day'), \"היום\", IF(IS_BEFORE({fldMiSAOsPZ8fYE6f}, TODAY()), \"באיחור מ-\" & DATETIME_FORMAT({fldMiSAOsPZ8fYE6f}, 'D.M'), IF(IS_SAME({fldMiSAOsPZ8fYE6f}, DATEADD(TODAY(), 1, 'day'), 'day'), \"מחר\", DATETIME_FORMAT({fldMiSAOsPZ8fYE6f}, 'D.M')))), \"\")",
+      "referencedFieldIds": [
+       "fldMiSAOsPZ8fYE6f"
+      ],
+      "result": {
+       "type": "singleLineText"
+      }
+     }
+    },
+    {
+     "id": "fldTSlcNVzTIbLX8H",
+     "name": "סדר עבודה",
+     "type": "formula",
+     "description": "קבוצת העבודה של הליד במסך משימות להיום. חמש קבוצות, וכל ליד נמצא באחת בדיוק. הסדר: אין ליצור קשר → 🟤 · דורש בדיקה → 🟠 · סגור או אין פעולה → 🟤 · היום → 🔴 · מועד עתידי → 🟣 · ממתינים ללקוח → 🟢. דורש בדיקה גובר על \"ללא פעולה\" בכוונה, כדי שעסקה שנסגרה בלי נתונים מסחריים לא תיעלם מהעבודה. מסך משימות להיום מציג רק 🔴 🟠 🟣. תצוגה בלבד.",
+     "config": {
+      "isValid": true,
+      "formula": "IF({fldMdVhsvIUcSmTX8},\"🟤 ללא פעולה · סגור, או שאין ליצור קשר\",IF(OR({fldhU70kjBUhQPwCp},{fldvRb0uZu1bRKp3u}=\"כן\"),\"🟠 דורש בדיקה · משהו חוסם ואי אפשר להתקדם בלי הכרעה\",IF(OR({fld5KlfuDpeb4PFo8}=\"הסתיים\",{fldoy2yHibIG89U5G}=\"אין פעולה\"),\"🟤 ללא פעולה · סגור, או שאין ליצור קשר\",IF(OR({fldoy2yHibIG89U5G}=\"להשיב ללקוח\",{fldQbuFSBBTxLis8N}=\"כן\",AND({fldMiSAOsPZ8fYE6f},IS_BEFORE({fldMiSAOsPZ8fYE6f},TODAY())),AND({fld5KlfuDpeb4PFo8}=\"ממתין לפנייה\",{fldMY3LA2vVjdPVdB}=\"חדש\"),AND({fldMiSAOsPZ8fYE6f},IS_SAME({fldMiSAOsPZ8fYE6f},TODAY(),'day'))),\"🔴 מה צריך לקרות היום · ליד חדש, הודעה לאישור, לקוח שמחכה, איחור או מועד היום\",IF(OR(AND({fld5KlfuDpeb4PFo8}=\"ממתין למועד\",OR({fldMiSAOsPZ8fYE6f},{fldFCNDsBGoHYWjGh})),{fldMY3LA2vVjdPVdB}=\"רלוונטי לעתיד\"),\"🟣 בהמשך · יש מועד עתידי, אין מה לעשות עכשיו\",IF({fld5KlfuDpeb4PFo8}=\"ממתין לתגובה\",\"🟢 ממתינים לתגובת הלקוח · פנינו, הכדור אצלו\",\"🔴 מה צריך לקרות היום · ליד חדש, הודעה לאישור, לקוח שמחכה, איחור או מועד היום\"))))))",
+      "referencedFieldIds": [
+       "fldMdVhsvIUcSmTX8",
+       "fldhU70kjBUhQPwCp",
+       "fldvRb0uZu1bRKp3u",
+       "fld5KlfuDpeb4PFo8",
+       "fldoy2yHibIG89U5G",
+       "fldQbuFSBBTxLis8N",
+       "fldMiSAOsPZ8fYE6f",
+       "fldMY3LA2vVjdPVdB",
+       "fldFCNDsBGoHYWjGh"
+      ],
+      "result": {
+       "type": "singleLineText"
+      }
+     }
+    },
+    {
+     "id": "fldquExsjwY9z2DWU",
+     "name": "סדר",
+     "type": "formula",
+     "description": "מפתח מיון בתוך קבוצת סדר העבודה: לקוח שמחכה לנו · עדיפות · מועד. לא מוצג בממשק.",
+     "config": {
+      "isValid": true,
+      "formula": "IF({fldoy2yHibIG89U5G} = \"להשיב ללקוח\", \"0\", \"1\") & \"-\" & IF({fldrAP6pYmclXbGsw}, {fldrAP6pYmclXbGsw}, 9) & \"-\" & IF({fldMiSAOsPZ8fYE6f}, DATETIME_FORMAT({fldMiSAOsPZ8fYE6f}, 'YYYY-MM-DD'), \"9999-99-99\")",
+      "referencedFieldIds": [
+       "fldoy2yHibIG89U5G",
+       "fldrAP6pYmclXbGsw",
+       "fldMiSAOsPZ8fYE6f"
+      ],
+      "result": {
+       "type": "singleLineText"
+      }
+     }
+    },
+    {
+     "id": "fldmejQH8Ie289tav",
+     "name": "מעקב",
+     "type": "formula",
+     "description": "עדיפות · סבב · פניות · פעילות אחרונה · שיחה מוצעת · טיפול אישי, בשורה אחת. תצוגה בלבד. הסבב מוצג מתוך 4 (סבבים_מרביים בהגדרות).",
+     "config": {
+      "isValid": true,
+      "formula": "IF({fldrAP6pYmclXbGsw}, \"עדיפות \" & {fldrAP6pYmclXbGsw} & \" · \", \"\") & \"סבב \" & IF({fldo5pnpCjaGsmDtw}, {fldo5pnpCjaGsmDtw}, 0) & \"/4\" & IF({fld11IWYjoDQycO4v}, \" · \" & {fld11IWYjoDQycO4v} & IF({fld11IWYjoDQycO4v} = 1, \" פנייה\", \" פניות\"), \"\") & IF({fldvTSgqSbc83pn4n}, \" · פעילות אחרונה \" & IF(IS_SAME({fldvTSgqSbc83pn4n}, TODAY(), 'day'), \"היום\", DATETIME_FORMAT({fldvTSgqSbc83pn4n}, 'D.M')), \"\") & IF(AND({fldlAAoEN2AJ9YBZ7}, NOT({fldMiSAOsPZ8fYE6f}), NOT({fldFCNDsBGoHYWjGh})), \" · שיחה מוצעת \" & IF(IS_SAME(SET_TIMEZONE({fldlAAoEN2AJ9YBZ7}, 'Asia/Jerusalem'), TODAY(), 'day'), DATETIME_FORMAT(SET_TIMEZONE({fldlAAoEN2AJ9YBZ7}, 'Asia/Jerusalem'), 'HH:mm'), DATETIME_FORMAT(SET_TIMEZONE({fldlAAoEN2AJ9YBZ7}, 'Asia/Jerusalem'), 'D.M HH:mm')), \"\") & IF({fldUUzkLcocMeHqTJ}, \" · טיפול אישי\", \"\")",
+      "referencedFieldIds": [
+       "fldrAP6pYmclXbGsw",
+       "fldo5pnpCjaGsmDtw",
+       "fld11IWYjoDQycO4v",
+       "fldvTSgqSbc83pn4n",
+       "fldlAAoEN2AJ9YBZ7",
+       "fldMiSAOsPZ8fYE6f",
+       "fldFCNDsBGoHYWjGh",
+       "fldUUzkLcocMeHqTJ"
+      ],
+      "result": {
+       "type": "singleLineText"
+      }
+     }
+    },
+    {
+     "id": "fldVuSd5nbFjkKhJ4",
+     "name": "סוג חריגה",
+     "type": "formula",
+     "description": "סוג החריגה הראשי של הליד לעמוד החריגות: הודעה נחסמה · הודעה דורשת בירור · דורש בדיקה · בדיקת נתונים · ללא אחראי · תקוע לפי הכללים. ריק = אין חריגה.",
+     "config": {
+      "isValid": true,
+      "formula": "IF(FIND(\"נחסם\", ARRAYJOIN({fldNfb4sMtvxfSvlt}, \",\")), \"הודעה נחסמה\", IF(FIND(\"דורש בירור\", ARRAYJOIN({fldNfb4sMtvxfSvlt}, \",\")), \"הודעה דורשת בירור\", IF({fldhU70kjBUhQPwCp}, \"דורש בדיקה\", IF({fldVCL6xYNzEgzgVm} = \"כן\", \"בדיקת נתונים\", IF(NOT({fldc9BJfqXLxwPlJ1}), \"ללא אחראי\", IF({fldMGDtPtLRrxfsZ9}, \"תקוע לפי הכללים\", \"\"))))))",
+      "referencedFieldIds": [
+       "fldNfb4sMtvxfSvlt",
+       "fldhU70kjBUhQPwCp",
+       "fldVCL6xYNzEgzgVm",
+       "fldc9BJfqXLxwPlJ1",
+       "fldMGDtPtLRrxfsZ9"
+      ],
+      "result": {
+       "type": "singleLineText"
+      }
+     }
+    },
+    {
+     "id": "fldqIbO3iR3DpGHP9",
+     "name": "סיבות חסימה",
+     "type": "multipleLookupValues",
+     "description": "סיבות החסימה של הודעות הליד, לנוסחת סיבת עיכוב. לא מוצג בממשק.",
+     "config": {
+      "isValid": true,
+      "recordLinkFieldId": "fldSX1NC6nZDtmkkP",
+      "fieldIdInLinkedTable": "fldKKbG62DQ40YnFH",
+      "result": {
+       "type": "singleLineText"
+      }
+     }
+    },
+    {
+     "id": "fldBnzbAl5UDchsDS",
+     "name": "מה עכשיו",
+     "type": "formula",
+     "description": "הפעולה הבאה ומועדה במשפט אחד. כשיש הודעה שממתינה לאישור, הטקסט נלקח מ\"מה לאשר\" — כלומר נגזר מההודעות עצמן ולא ממצב הליד, ולכן נכון גם כששתי טיוטות ממתינות. תצוגה בלבד.",
+     "config": {
+      "isValid": true,
+      "formula": "IF({fldMdVhsvIUcSmTX8},\"אין ליצור קשר\",IF({fldQbuFSBBTxLis8N}=\"כן\",IF({fldp8kIba1WPuZflr},{fldp8kIba1WPuZflr},\"לאשר הודעה\"),IF(AND({fldUUzkLcocMeHqTJ},OR({fldoy2yHibIG89U5G}=\"לשלוח הודעה\",{fldoy2yHibIG89U5G}=\"להשיב ללקוח\")),\"לפנות ידנית · טיפול אישי\",IF({fldoy2yHibIG89U5G}=\"להשיב ללקוח\",\"להשיב ללקוח · עכשיו\",IF(AND(OR(NOT({fldoy2yHibIG89U5G}),{fldoy2yHibIG89U5G}=\"אין פעולה\"),{fldhU70kjBUhQPwCp}),\"דורש בדיקה\"&IF({fldrvrGCzUgDJCr7y},\" · \"&{fldrvrGCzUgDJCr7y},\"\"),IF(OR(NOT({fldoy2yHibIG89U5G}),{fldoy2yHibIG89U5G}=\"אין פעולה\"),\"לא נדרשת פעולה\",IF(AND({fld5KlfuDpeb4PFo8}=\"ממתין למועד\",{fldFCNDsBGoHYWjGh}),{fldoy2yHibIG89U5G}&\" · \"&DATETIME_FORMAT(SET_TIMEZONE({fldFCNDsBGoHYWjGh},'Asia/Jerusalem'),'D.M HH:mm'),{fldoy2yHibIG89U5G}&IF({fldDjuNRRp5iMudS8},\" · \"&{fldDjuNRRp5iMudS8},\"\"))))))))",
+      "referencedFieldIds": [
+       "fldMdVhsvIUcSmTX8",
+       "fldQbuFSBBTxLis8N",
+       "fldp8kIba1WPuZflr",
+       "fldUUzkLcocMeHqTJ",
+       "fldoy2yHibIG89U5G",
+       "fldhU70kjBUhQPwCp",
+       "fldrvrGCzUgDJCr7y",
+       "fld5KlfuDpeb4PFo8",
+       "fldFCNDsBGoHYWjGh",
+       "fldDjuNRRp5iMudS8"
+      ],
+      "result": {
+       "type": "singleLineText"
+      }
+     }
+    },
+    {
+     "id": "fldKLWRKe1Za6yidA",
+     "name": "סיבת עיכוב",
+     "type": "formula",
+     "description": "רק מה שבאמת חוסם התקדמות: אין תאריך · המועד עבר · אין אחראי · ללא פעילות · הודעה נחסמה (ולמה) · הודעה דורשת בירור · בדיקת נתונים פתוחה · תקוע לפי הכללים. טיפול אישי ואין ליצור קשר אינם עיכוב. ריק = אין חסם.",
+     "config": {
+      "isValid": true,
+      "formula": "REGEX_REPLACE(IF(FIND(\"ללא תאריך\", {fldMGDtPtLRrxfsZ9} & \"\"), \"אין תאריך להמשך · \", \"\") & IF(FIND(\"תאריך עבר\", {fldMGDtPtLRrxfsZ9} & \"\"), \"המועד עבר · \", \"\") & IF(FIND(\"ללא אחראי\", {fldMGDtPtLRrxfsZ9} & \"\"), \"אין אחראי · \", \"\") & IF(FIND(\"ללא פעילות\", {fldMGDtPtLRrxfsZ9} & \"\"), \"ללא פעילות זמן רב · \", \"\") & IF(FIND(\"נחסם\", ARRAYJOIN({fldNfb4sMtvxfSvlt}, \",\")), \"הודעה נחסמה\" & IF(ARRAYJOIN(ARRAYUNIQUE(ARRAYCOMPACT({fldlInBiWIEIFuHGo})), \", \"), \": \" & ARRAYJOIN(ARRAYUNIQUE(ARRAYCOMPACT({fldlInBiWIEIFuHGo})), \", \"), \"\") & \" · \", \"\") & IF(FIND(\"דורש בירור\", ARRAYJOIN({fldNfb4sMtvxfSvlt}, \",\")), \"הודעה דורשת בירור · \", \"\") & IF({fldVCL6xYNzEgzgVm} = \"כן\", \"בדיקת נתונים פתוחה · \", \"\") & IF({fldrvrGCzUgDJCr7y}, {fldrvrGCzUgDJCr7y} & \" · \", \"\"), \" · $\", \"\")",
+      "referencedFieldIds": [
+       "fldMGDtPtLRrxfsZ9",
+       "fldNfb4sMtvxfSvlt",
+       "fldlInBiWIEIFuHGo",
+       "fldVCL6xYNzEgzgVm",
+       "fldrvrGCzUgDJCr7y"
+      ],
+      "result": {
+       "type": "singleLineText"
+      }
+     }
+    },
+    {
+     "id": "fldWTWvG6dTCb1UO5",
+     "name": "כרטיס",
+     "type": "formula",
+     "description": "יחידה קריאה אחת לתור הבוקר: שורה 1 כותרת · שורה 2 מה עכשיו · שורה 3 מעקב · שורה 4 סיבת עיכוב רק כשיש. תצוגה בלבד.",
+     "config": {
+      "isValid": true,
+      "formula": "{fldxplqe7okD0DOHn}&\"\\n\"&{fldBnzbAl5UDchsDS}&IF({fldc9BJfqXLxwPlJ1},\" · \"&{fldc9BJfqXLxwPlJ1},\"\")&\"\\n\"&IF({fldKLWRKe1Za6yidA},\"⚠ \"&{fldKLWRKe1Za6yidA},{fldhxOjKBbUZZOruy})",
+      "referencedFieldIds": [
+       "fldxplqe7okD0DOHn",
+       "fldBnzbAl5UDchsDS",
+       "fldc9BJfqXLxwPlJ1",
+       "fldKLWRKe1Za6yidA",
+       "fldhxOjKBbUZZOruy"
+      ],
+      "result": {
+       "type": "singleLineText"
+      }
+     }
+    },
+    {
+     "id": "fld51Zh2cyQEAJD7U",
+     "name": "כרטיס חריגה",
+     "type": "formula",
+     "description": "יחידה קריאה אחת לעמוד החריגות: כותרת · הסיבה · מה עכשיו ואחראי. תצוגה בלבד.",
+     "config": {
+      "isValid": true,
+      "formula": "{fldxplqe7okD0DOHn} & IF({fldKLWRKe1Za6yidA}, \"\\n\" & {fldKLWRKe1Za6yidA}, \"\") & \"\\n\" & {fldBnzbAl5UDchsDS} & \" · \" & IF({fldc9BJfqXLxwPlJ1}, {fldc9BJfqXLxwPlJ1} & \"\", \"ללא אחראי\")",
+      "referencedFieldIds": [
+       "fldxplqe7okD0DOHn",
+       "fldKLWRKe1Za6yidA",
+       "fldBnzbAl5UDchsDS",
+       "fldc9BJfqXLxwPlJ1"
+      ],
+      "result": {
+       "type": "singleLineText"
+      }
+     }
+    },
+    {
+     "id": "flddunP2qubRnSws4",
+     "name": "מה קורה עכשיו",
+     "type": "formula",
+     "description": "האזור הבולט ב-Lead Workspace, בשדה אחד: מצב · הפעולה הבאה ומועדה · שיחה מוצעת · מעקב. תצוגה בלבד.",
+     "config": {
+      "isValid": true,
+      "formula": "{fldwVIpy8AKP5cORL}&\"\\nהפעולה הבאה: \"&{fldBnzbAl5UDchsDS}&IF({fldhxOjKBbUZZOruy},\"\\nלמה עכשיו: \"&{fldhxOjKBbUZZOruy},\"\")&\"\\n\"&{fldmejQH8Ie289tav}&IF({fldKLWRKe1Za6yidA},\"\\n⚠ מעכב: \"&{fldKLWRKe1Za6yidA},\"\")&IF({fldB3xoi8ShY3amIS},\"\\nהמלצת המערכת: \"&{fldB3xoi8ShY3amIS},\"\")",
+      "referencedFieldIds": [
+       "fldwVIpy8AKP5cORL",
+       "fldBnzbAl5UDchsDS",
+       "fldhxOjKBbUZZOruy",
+       "fldmejQH8Ie289tav",
+       "fldKLWRKe1Za6yidA",
+       "fldB3xoi8ShY3amIS"
+      ],
+      "result": {
+       "type": "singleLineText"
+      }
+     }
+    },
+    {
+     "id": "fld0F9M0UaFctgicH",
+     "name": "הקשר",
+     "type": "formula",
+     "description": "שורת הקשר קצרה לתור האישורים: מצב · מעקב · אחראי. תצוגה בלבד.",
+     "config": {
+      "isValid": true,
+      "formula": "{fldwVIpy8AKP5cORL} & \"\\n\" & {fldmejQH8Ie289tav} & IF({fldc9BJfqXLxwPlJ1}, \" · אחראי \" & {fldc9BJfqXLxwPlJ1}, \"\")",
+      "referencedFieldIds": [
+       "fldwVIpy8AKP5cORL",
+       "fldmejQH8Ie289tav",
+       "fldc9BJfqXLxwPlJ1"
+      ],
+      "result": {
+       "type": "singleLineText"
+      }
+     }
+    },
+    {
+     "id": "fldoWA7DeBy5J30EE",
+     "name": "V3 · קטגוריית משימה",
+     "type": "formula",
+     "description": "תצוגת V3 בלבד. קטגוריה יחידה לכל ליד במסך משימות להיום כדי למנוע כפילויות.",
+     "config": {
+      "isValid": true,
+      "formula": "IF({fldMdVhsvIUcSmTX8},\"\",IF({fld5KlfuDpeb4PFo8}=\"התקבלה תגובה\",\"1 · דורש תגובה ללקוח\",IF({fldQbuFSBBTxLis8N}=\"כן\",\"2 · הודעות לאישור\",IF(OR({fldoy2yHibIG89U5G}=\"להתקשר\",{fldoy2yHibIG89U5G}=\"לקיים פגישה\"),\"3 · שיחות ופגישות\",IF({fldvRb0uZu1bRKp3u}=\"כן\",\"4 · דורש בדיקה\",IF({fld5KlfuDpeb4PFo8}=\"ממתין לפנייה\",\"5 · לידים חדשים\",\"\"))))))",
+      "referencedFieldIds": [
+       "fldMdVhsvIUcSmTX8",
+       "fld5KlfuDpeb4PFo8",
+       "fldQbuFSBBTxLis8N",
+       "fldoy2yHibIG89U5G",
+       "fldvRb0uZu1bRKp3u"
+      ],
+      "result": {
+       "type": "singleLineText"
+      }
+     }
+    },
+    {
+     "id": "fldnTNSoHBVAJfpzb",
+     "name": "V3 · למה עכשיו",
+     "type": "formula",
+     "description": "תצוגת V3 בלבד. משפט קצר שמסביר למה הליד נמצא במשימות להיום.",
+     "config": {
+      "isValid": true,
+      "formula": "IF({fld5KlfuDpeb4PFo8}=\"התקבלה תגובה\",IF({fld5QbOXhoogr6CTX},\"הלקוח כתב: \"&LEFT({fld5QbOXhoogr6CTX},90),\"התקבלה תגובת לקוח — מחכה לנו\"),IF({fldQbuFSBBTxLis8N}=\"כן\",IF({fldo5pnpCjaGsmDtw}=0,\"ליד חדש — הודעת פתיחה מוכנה לאישור\",\"הודעת follow-up מוכנה לאישור · סבב \"&{fldo5pnpCjaGsmDtw}&\"/4\"),IF({fldoy2yHibIG89U5G}=\"להתקשר\",IF({fldDjuNRRp5iMudS8},\"שיחת מעקב · \"&{fldDjuNRRp5iMudS8},\"שיחת מעקב לביצוע\"),IF({fldoy2yHibIG89U5G}=\"לקיים פגישה\",IF({fldDjuNRRp5iMudS8},\"פגישה / התנסות · \"&{fldDjuNRRp5iMudS8},\"פגישה / התנסות לביצוע\"),IF({fldvRb0uZu1bRKp3u}=\"כן\",IF({fldKLWRKe1Za6yidA},{fldKLWRKe1Za6yidA},\"נדרשת בדיקה אנושית\"),IF({fld5KlfuDpeb4PFo8}=\"ממתין לפנייה\",\"ליד חדש — טרם התחיל טיפול\",\"\"))))))",
+      "referencedFieldIds": [
+       "fld5KlfuDpeb4PFo8",
+       "fld5QbOXhoogr6CTX",
+       "fldQbuFSBBTxLis8N",
+       "fldo5pnpCjaGsmDtw",
+       "fldoy2yHibIG89U5G",
+       "fldDjuNRRp5iMudS8",
+       "fldvRb0uZu1bRKp3u",
+       "fldKLWRKe1Za6yidA"
+      ],
+      "result": {
+       "type": "singleLineText"
+      }
+     }
+    },
+    {
+     "id": "fldxu9FC87NQXbb84",
+     "name": "V3 · מונה · תגובה",
+     "type": "formula",
+     "description": "תצוגת V3 בלבד. 1 רק ללידים בקטגוריה דורש תגובה; ריק לאחרים.",
+     "config": {
+      "isValid": true,
+      "formula": "IF({fldoWA7DeBy5J30EE}=\"1 · דורש תגובה ללקוח\",1,BLANK())",
+      "referencedFieldIds": [
+       "fldoWA7DeBy5J30EE"
+      ],
+      "result": {
+       "type": "number",
+       "options": {
+        "precision": 0
+       }
+      }
+     }
+    },
+    {
+     "id": "fldnbTgLlkNOrFMN8",
+     "name": "V3 · מונה · אישור",
+     "type": "formula",
+     "description": "תצוגת V3 בלבד. 1 רק ללידים בקטגוריה הודעות לאישור; ריק לאחרים.",
+     "config": {
+      "isValid": true,
+      "formula": "IF({fldoWA7DeBy5J30EE}=\"2 · הודעות לאישור\",1,BLANK())",
+      "referencedFieldIds": [
+       "fldoWA7DeBy5J30EE"
+      ],
+      "result": {
+       "type": "number",
+       "options": {
+        "precision": 0
+       }
+      }
+     }
+    },
+    {
+     "id": "fld4Py2TIOetH5Azk",
+     "name": "V3 · מונה · שיחות",
+     "type": "formula",
+     "description": "תצוגת V3 בלבד. 1 רק ללידים בקטגוריה שיחות ופגישות; ריק לאחרים.",
+     "config": {
+      "isValid": true,
+      "formula": "IF({fldoWA7DeBy5J30EE}=\"3 · שיחות ופגישות\",1,BLANK())",
+      "referencedFieldIds": [
+       "fldoWA7DeBy5J30EE"
+      ],
+      "result": {
+       "type": "number",
+       "options": {
+        "precision": 0
+       }
+      }
+     }
+    },
+    {
+     "id": "fld7Qr8xqLdO9TMsL",
+     "name": "V3 · מונה · בדיקה",
+     "type": "formula",
+     "description": "תצוגת V3 בלבד. 1 רק ללידים בקטגוריה דורש בדיקה; ריק לאחרים.",
+     "config": {
+      "isValid": true,
+      "formula": "IF({fldoWA7DeBy5J30EE}=\"4 · דורש בדיקה\",1,BLANK())",
+      "referencedFieldIds": [
+       "fldoWA7DeBy5J30EE"
+      ],
+      "result": {
+       "type": "number",
+       "options": {
+        "precision": 0
+       }
+      }
+     }
+    },
+    {
+     "id": "fld43xZFbKnzRm1v1",
+     "name": "V3 · מונה · חדשים",
+     "type": "formula",
+     "description": "תצוגת V3 בלבד. 1 רק ללידים בקטגוריה לידים חדשים; ריק לאחרים.",
+     "config": {
+      "isValid": true,
+      "formula": "IF({fldoWA7DeBy5J30EE}=\"5 · לידים חדשים\",1,BLANK())",
+      "referencedFieldIds": [
+       "fldoWA7DeBy5J30EE"
+      ],
+      "result": {
+       "type": "number",
+       "options": {
+        "precision": 0
+       }
+      }
+     }
+    },
+    {
+     "id": "fldhxOjKBbUZZOruy",
+     "name": "למה עכשיו",
+     "type": "formula",
+     "description": "תצוגת V2 בלבד. משפט קצר שמסביר למה הליד נמצא בקבוצת העבודה הנוכחית. לא משנה לוגיקה או אוטומציות.",
+     "config": {
+      "isValid": true,
+      "formula": "IF({fldMdVhsvIUcSmTX8},\"הלקוח מסומן כאין ליצור קשר\",IF({fldQbuFSBBTxLis8N}=\"כן\",IF(OR({fld5KlfuDpeb4PFo8}=\"התקבלה תגובה\",{fldoy2yHibIG89U5G}=\"להשיב ללקוח\"),\"הלקוח חזר — תשובה מוכנה לאישור\",IF({fldo5pnpCjaGsmDtw}>0,\"הודעת מעקב מוכנה לאישור · סבב \"&{fldo5pnpCjaGsmDtw}&\"/4\",\"ליד חדש — הודעת פתיחה מוכנה לאישור\")),IF({fldoy2yHibIG89U5G}=\"להשיב ללקוח\",IF({fld5QbOXhoogr6CTX},\"הלקוח חזר: \"&LEFT({fld5QbOXhoogr6CTX},100),\"הלקוח חזר — מחכה לתגובה שלנו\"),IF(OR({fldhU70kjBUhQPwCp},{fldvRb0uZu1bRKp3u}=\"כן\"),IF({fldKLWRKe1Za6yidA},{fldKLWRKe1Za6yidA},\"נדרשת בדיקה אנושית\"),IF(AND({fld5KlfuDpeb4PFo8}=\"ממתין לפנייה\",{fldMY3LA2vVjdPVdB}=\"חדש\"),IF({fldUUzkLcocMeHqTJ},\"ליד חדש · טיפול אישי — אין ניסוח אוטומטי, צריך לפנות ידנית\",\"ליד חדש — טרם התחיל טיפול\"),IF({fld5KlfuDpeb4PFo8}=\"ממתין לתגובה\",\"פנינו ללקוח — כרגע מחכים לתגובה\",IF({fld5KlfuDpeb4PFo8}=\"ממתין למועד\",IF({fldFCNDsBGoHYWjGh},\"נקבע מועד · \"&DATETIME_FORMAT(SET_TIMEZONE({fldFCNDsBGoHYWjGh},'Asia/Jerusalem'),'D.M HH:mm'),IF({fldMiSAOsPZ8fYE6f},\"נקבע מועד · \"&DATETIME_FORMAT({fldMiSAOsPZ8fYE6f},'D.M'),\"מסומן ממתין למועד — אבל אין מועד\")),IF({fldMiSAOsPZ8fYE6f},\"פעולת המשך מתוזמנת\",\"\"))))))))",
+      "referencedFieldIds": [
+       "fldMdVhsvIUcSmTX8",
+       "fldQbuFSBBTxLis8N",
+       "fld5KlfuDpeb4PFo8",
+       "fldoy2yHibIG89U5G",
+       "fldo5pnpCjaGsmDtw",
+       "fld5QbOXhoogr6CTX",
+       "fldhU70kjBUhQPwCp",
+       "fldvRb0uZu1bRKp3u",
+       "fldKLWRKe1Za6yidA",
+       "fldMY3LA2vVjdPVdB",
+       "fldUUzkLcocMeHqTJ",
+       "fldFCNDsBGoHYWjGh",
+       "fldMiSAOsPZ8fYE6f"
+      ],
+      "result": {
+       "type": "singleLineText"
+      }
+     }
+    },
+    {
+     "id": "fldl0XM3ULLMt1BIi",
+     "name": "מי זה",
+     "type": "formula",
+     "description": "תצוגה בלבד. מחליף את גוש תיבות הקלט של פרטי הליד בשלוש שורות קריאות: מה הוא מבקש · איך להשיג אותו · מאיפה ומתי הגיע.",
+     "config": {
+      "isValid": true,
+      "formula": "\"מבקש · \" & IF(NOT({fldvrsoDbTXuVe4iX}), {fldWGKe4vGkx1XVvA}, IF({fldWGKe4vGkx1XVvA}=\"מזרנים\", IF({fldvrsoDbTXuVe4iX}=1,\"מזרן אחד\",{fldvrsoDbTXuVe4iX}&\" מזרנים\"), IF({fldWGKe4vGkx1XVvA}=\"ציוד\", IF({fldvrsoDbTXuVe4iX}=1,\"פריט ציוד אחד\",{fldvrsoDbTXuVe4iX}&\" פריטי ציוד\"), IF({fldvrsoDbTXuVe4iX}=1,\"רפורמר אחד\",{fldvrsoDbTXuVe4iX}&\" רפורמרים\")&\" \"&{fldWGKe4vGkx1XVvA}))) & IF(AND({fldeM9Ce7N7mK5QJo},{fldeM9Ce7N7mK5QJo}!=\"לא ידוע\"), \" · \" & {fldeM9Ce7N7mK5QJo}, \"\") & IF({fldjDM31QcXiwJ9P2}, \"\\n\" & {fldjDM31QcXiwJ9P2}, \"\") & \"\\nיצירת קשר · \" & IF({fldvB6SsLTeFttB1y}, {fldvB6SsLTeFttB1y}, \"אין טלפון\") & IF({fldV4Ueosp3y9c7gd}, \" · \" & {fldV4Ueosp3y9c7gd}, \"\") & IF({flde7KAqyoktWZoPy}, \" · \" & {flde7KAqyoktWZoPy}, \"\") & \"\\nהגיע · \" & IF({fld0WZ6DyE9iXPMzr}, {fld0WZ6DyE9iXPMzr} & \" · \", \"\") & IF({fldoaqRvQ5bscM12Q}, DATETIME_FORMAT({fldoaqRvQ5bscM12Q},'D.M.YYYY'), \"תאריך לא ידוע\") & IF({fldc9BJfqXLxwPlJ1}, \" · אחראי \" & {fldc9BJfqXLxwPlJ1}, \" · אין אחראי\") & IF({fldrAP6pYmclXbGsw}, \" · עדיפות \" & {fldrAP6pYmclXbGsw}, \"\")",
+      "referencedFieldIds": [
+       "fldvrsoDbTXuVe4iX",
+       "fldWGKe4vGkx1XVvA",
+       "fldeM9Ce7N7mK5QJo",
+       "fldjDM31QcXiwJ9P2",
+       "fldvB6SsLTeFttB1y",
+       "fldV4Ueosp3y9c7gd",
+       "flde7KAqyoktWZoPy",
+       "fld0WZ6DyE9iXPMzr",
+       "fldoaqRvQ5bscM12Q",
+       "fldc9BJfqXLxwPlJ1",
+       "fldrAP6pYmclXbGsw"
+      ],
+      "result": {
+       "type": "singleLineText"
+      }
+     }
+    },
+    {
+     "id": "fldZhbXDZcyHaX7O3",
+     "name": "מה בבדיקה",
+     "type": "rollup",
+     "description": "מושך את פירוט הבדיקות מטבלת לבדיקה ומציג אותן במסך הליד. שדה תצוגה בלבד.",
+     "config": {
+      "isValid": true,
+      "recordLinkFieldId": "fld9B64RK36SQHEiS",
+      "fieldIdInLinkedTable": "fldJJuuW1fjq62VHV",
+      "referencedFieldIds": [],
+      "result": {
+       "type": "singleLineText"
+      }
+     }
+    },
+    {
+     "id": "fldp8kIba1WPuZflr",
+     "name": "מה לאשר",
+     "type": "rollup",
+     "description": "התוויות של כל ההודעות שממתינות לאישור בליד הזה. נגזר מההודעות עצמן ולא ממצב הליד, ולכן מציג נכון גם כשממתינות שתי טיוטות. תצוגה בלבד.",
+     "config": {
+      "isValid": true,
+      "recordLinkFieldId": "fldSX1NC6nZDtmkkP",
+      "fieldIdInLinkedTable": "flduwHj2vdpRrNZ6f",
+      "referencedFieldIds": [],
+      "result": {
+       "type": "singleLineText"
+      }
+     }
+    },
+    {
+     "id": "fldM78nLG8bNIC874",
+     "name": "פירוט עסקה",
+     "type": "multilineText",
+     "description": "מה נרכש בפועל, הנחה, תנאי תשלום וכל מה שרלוונטי לעסקה עצמה. נפרד מ״פירוט המוצר״ שמתאר את ההתעניינות."
+    },
+    {
+     "id": "fldYFJRFGCzmIZaTb",
+     "name": "תאריך סגירת עסקה",
+     "type": "date",
+     "description": "מתי העסקה נסגרה. נכתב אוטומטית על ידי המנוע במעבר ל״נסגרה עסקה״, רק אם הוא ריק. בסיס למדידת עסקאות והכנסות לפי תקופה.",
+     "config": {
+      "dateFormat": {
+       "name": "european",
+       "format": "D/M/YYYY"
+      }
+     }
+    },
+    {
+     "id": "fldFvO04S80OTRKc7",
+     "name": "עדיפות · מיון",
+     "type": "formula",
+     "description": "שדה עזר לתצוגה בלבד. זהה ל'עדיפות', אבל ליד בלי עדיפות עסקית מקבל 9 כדי שיישב בסוף המיון ולא בראשו. לא לוגיקה עסקית — אין להשתמש בו לשום חישוב.",
+     "config": {
+      "isValid": true,
+      "formula": "IF({fldrAP6pYmclXbGsw}, {fldrAP6pYmclXbGsw}, 9)",
+      "referencedFieldIds": [
+       "fldrAP6pYmclXbGsw"
+      ],
+      "result": {
+       "type": "number",
+       "options": {
+        "precision": 0
+       }
+      }
+     }
+    },
+    {
+     "id": "fldFQJqYdVCo5PVDC",
+     "name": "ארכיון היסטורי",
+     "type": "formula",
+     "description": "נוסחה, תצוגה וסינון בלבד. \"כן\" = רשומה שהוגרה באיחוד של 3.9.2026 (יש לה מזהה מקורי) ולא היתה לה שום פעילות מאז. ריק = רשומה חדשה, או רשומה היסטורית שמישהו נגע בה אחרי האיחוד. שדה מרפא את עצמו: רגע שמתעד מגע ביומן הרשומה חוזרת ללוח בלי שאף אחד ינגע בסטטוס. אינו לוגיקה עסקית — אין להשתמש בו בשום חישוב של המנוע.",
+     "config": {
+      "isValid": true,
+      "formula": "IF(AND({fldpBArnJe2f074Oa}, OR(NOT({fldvTSgqSbc83pn4n}), NOT(IS_AFTER({fldvTSgqSbc83pn4n}, DATETIME_PARSE(\"2026-09-03\", \"YYYY-MM-DD\"))))), \"כן\", \"\")",
+      "referencedFieldIds": [
+       "fldpBArnJe2f074Oa",
+       "fldvTSgqSbc83pn4n"
+      ],
+      "result": {
+       "type": "singleLineText"
+      }
+     }
+    },
+    {
+     "id": "fldoT1r1vlAdHAHEF",
+     "name": "·",
+     "type": "formula",
+     "description": "תצוגה בלבד. שתי שורות לכרטיס בלוח המכירות: מה הוא מבקש ומאיפה, ומתחתיו עדיפות · אחראי · פעילות אחרונה. מחליף שישה שדות נפרדים שהפכו את הכרטיס לגבוה מדי. אינו לוגיקה עסקית.",
+     "config": {
+      "isValid": true,
+      "formula": "IF({fldWGKe4vGkx1XVvA}, {fldWGKe4vGkx1XVvA}, \"ללא קו מוצר\") & IF({fldvrsoDbTXuVe4iX}, \" · \" & {fldvrsoDbTXuVe4iX} & IF({fldWGKe4vGkx1XVvA}=\"מזרנים\", IF({fldvrsoDbTXuVe4iX}=1, \" מזרן\", \" מזרנים\"), IF({fldWGKe4vGkx1XVvA}=\"ציוד\", IF({fldvrsoDbTXuVe4iX}=1, \" פריט\", \" פריטים\"), IF({fldvrsoDbTXuVe4iX}=1, \" רפורמר\", \" רפורמרים\"))), \"\") & IF({flde7KAqyoktWZoPy}, \" · \" & {flde7KAqyoktWZoPy}, \"\") & \"\\n\" & IF({fldrAP6pYmclXbGsw}, \"⭐ עדיפות \" & {fldrAP6pYmclXbGsw} & \" · \", \"\") & IF({fldc9BJfqXLxwPlJ1}, {fldc9BJfqXLxwPlJ1} & \"\", \"ללא אחראי\") & IF({fldSLgiPqkHr7sd3Y}, \" · \" & {fldSLgiPqkHr7sd3Y}, \" · אין פעילות\")",
+      "referencedFieldIds": [
+       "fldWGKe4vGkx1XVvA",
+       "fldvrsoDbTXuVe4iX",
+       "flde7KAqyoktWZoPy",
+       "fldrAP6pYmclXbGsw",
+       "fldc9BJfqXLxwPlJ1",
+       "fldSLgiPqkHr7sd3Y"
+      ],
+      "result": {
+       "type": "singleLineText"
+      }
+     }
+    },
+    {
+     "id": "fldrvrGCzUgDJCr7y",
+     "name": "סיבת הבדיקה",
+     "type": "singleLineText",
+     "description": "למה המנוע הדליק את \"דורש בדיקה\", במילות של הצוות. שדה שהמנוע כותב — אין לערוך ידנית ואין להציג במרחב ישירות; הוא מגיע למסכים דרך \"סיבת עיכוב\" ו\"מה עכשיו\". מתרוקן מעצמו כשהסיבה נעלמת. ריק כשהדגל הודלק בידי אדם ולא בידי המנוע."
+    },
+    {
+     "id": "fldlInBiWIEIFuHGo",
+     "name": "סיבות חסימה פעילות",
+     "type": "multipleLookupValues",
+     "description": "סיבות החסימה של הודעות הליד שבאמת חסומות או דורשות בירור עכשיו. מחליף את סיבות חסימה בנוסחת סיבת עיכוב. לא מוצג בממשק (שחר, 14.10.2026).",
+     "config": {
+      "isValid": true,
+      "recordLinkFieldId": "fldSX1NC6nZDtmkkP",
+      "fieldIdInLinkedTable": "fldguvGb7MtaH8pp3",
+      "result": {
+       "type": "singleLineText"
+      }
+     }
+    },
+    {
+     "id": "fld9G6E9XDLoyBXwZ",
+     "name": "הצעת מחיר",
+     "type": "rollup",
+     "description": "ההצעה הגבוהה שנשלחה לליד, מתוך מגעי הצעת מחיר ביומן. תצוגה בלבד, לא ממלאים ידנית — ממלאים סכום הצעה במגע (שחר, 15.10.2026).",
+     "config": {
+      "isValid": true,
+      "recordLinkFieldId": "fldhYgVoAC8bG7aRQ",
+      "fieldIdInLinkedTable": "fldzwAHL0xwVlEDnw",
+      "referencedFieldIds": [],
+      "result": {
+       "type": "number",
+       "options": {
+        "precision": 0
+       }
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "tblvlb654Vb0cOfZL",
+   "name": "יומן מגעים",
+   "description": "שורה לכל מגע משמעותי מול לקוח: שיחה, הודעה, תגובה, הצעה או פגישה. זו הטבלה שהופכת את ההערות החופשיות למידע שאפשר לספור, לסנן ולבנות עליו כללים.",
+   "primaryFieldId": "fld942D63pmwyS1lG",
+   "fields": [
+    {
+     "id": "fld942D63pmwyS1lG",
+     "name": "תיאור",
+     "type": "singleLineText",
+     "description": "תיאור קצר של מה קרה, בשורה אחת."
+    },
+    {
+     "id": "fldbgPsaQUpcNWknD",
+     "name": "לידים",
+     "type": "multipleRecordLinks",
+     "config": {
+      "linkedTableId": "tbl91QjpePM88Zp9p",
+      "isReversed": false,
+      "prefersSingleRecordLink": false,
+      "inverseLinkFieldId": "fldhYgVoAC8bG7aRQ"
+     }
+    },
+    {
+     "id": "fldm5cXUDbuREbUAI",
+     "name": "ליד ויואלדי",
+     "type": "multipleRecordLinks",
+     "description": "קישור לליד בטבלת ויואלדי.",
+     "config": {
+      "linkedTableId": "tbl9SV4GU8kICBARH",
+      "isReversed": false,
+      "prefersSingleRecordLink": false,
+      "inverseLinkFieldId": "fldCbQT9Mn4cEDBSH"
+     }
+    },
+    {
+     "id": "fldy8tABj4Mlx55V1",
+     "name": "ליד מזרנים",
+     "type": "multipleRecordLinks",
+     "description": "קישור לליד בטבלת המזרנים.",
+     "config": {
+      "linkedTableId": "tblctwsCBcoivy8Kf",
+      "isReversed": false,
+      "prefersSingleRecordLink": false,
+      "inverseLinkFieldId": "fldeh0GA5pmIqzTIm"
+     }
+    },
+    {
+     "id": "fldFULvuJ2NejI3cF",
+     "name": "ליד סימפוני",
+     "type": "multipleRecordLinks",
+     "description": "קישור לליד בטבלת סימפוני.",
+     "config": {
+      "linkedTableId": "tblJSFUoHoohJCnDL",
+      "isReversed": false,
+      "prefersSingleRecordLink": false,
+      "inverseLinkFieldId": "fldXEX1MSrdy32cND"
+     }
+    },
+    {
+     "id": "fldNbtuv2Irpi93fh",
+     "name": "ליד ציוד",
+     "type": "multipleRecordLinks",
+     "description": "קישור לליד בטבלת הציוד.",
+     "config": {
+      "linkedTableId": "tblbpggF99sxcIAvc",
+      "isReversed": false,
+      "prefersSingleRecordLink": false,
+      "inverseLinkFieldId": "fld0wbWJhHt7YPdKH"
+     }
+    },
+    {
+     "id": "fldoOYazwAWGo8bdB",
+     "name": "מועד תיעוד",
+     "type": "formula",
+     "description": "מתי הרשומה נוצרה במערכת. אוטומטי ולא ניתן לעריכה. הפער מול מועד המגע הוא מדד אמינות — תיעוד בדיעבד.",
+     "config": {
+      "isValid": true,
+      "formula": "CREATED_TIME()",
+      "referencedFieldIds": [],
+      "result": {
+       "type": "date",
+       "options": {
+        "dateFormat": {
+         "name": "us",
+         "format": "M/D/YYYY"
+        }
+       }
+      }
+     }
+    },
+    {
+     "id": "fldWyNk8slPiQPK3Z",
+     "name": "מועד מגע",
+     "type": "dateTime",
+     "description": "מתי האינטראקציה עם הלקוח באמת התרחשה. ברירת מחדל עכשיו, ניתן לשינוי בתיעוד בדיעבד. פעילות אחרונה נגזרת ממנו. ריק ב-648 השורות ההיסטוריות — מועדן אינו ידוע ואין להמציא אותו.",
+     "config": {
+      "dateFormat": {
+       "name": "european",
+       "format": "D/M/YYYY"
+      },
+      "timeFormat": {
+       "name": "24hour",
+       "format": "HH:mm"
+      },
+      "timeZone": "Asia/Jerusalem"
+     }
+    },
+    {
+     "id": "fldY9rSeT2j1icvYN",
+     "name": "סוג מגע",
+     "type": "singleSelect",
+     "description": "איזה סוג אינטראקציה הייתה.",
+     "config": {
+      "choices": [
+       {
+        "id": "selXINdosBz3b4glX",
+        "name": "שיחת טלפון",
+        "color": "blueLight2"
+       },
+       {
+        "id": "sel2I9RbLzi6F7dbl",
+        "name": "הודעת WhatsApp",
+        "color": "tealLight2"
+       },
+       {
+        "id": "sel8Ppex5yWpwRWTt",
+        "name": "שיחה יוצאת",
+        "color": "blueLight2"
+       },
+       {
+        "id": "sell2gEijhNBYZh3l",
+        "name": "שיחה נכנסת",
+        "color": "cyanLight2"
+       },
+       {
+        "id": "selEEoSLGCMTKdnjG",
+        "name": "הודעה שנשלחה",
+        "color": "tealLight2"
+       },
+       {
+        "id": "selLZbrK2wM3Z0rxL",
+        "name": "תגובת לקוח",
+        "color": "greenLight2"
+       },
+       {
+        "id": "selGynXZCvdrlnnCs",
+        "name": "הצעת מחיר",
+        "color": "purpleLight2"
+       },
+       {
+        "id": "selLquO0Hy3CcRk2V",
+        "name": "פגישה או התנסות",
+        "color": "orangeLight2"
+       },
+       {
+        "id": "sell0JgxuT8m8JdGm",
+        "name": "הערה פנימית",
+        "color": "grayLight2"
+       },
+       {
+        "id": "selOvDTb8LIanmFdm",
+        "name": "יבוא סטטוס היסטורי",
+        "color": "yellowLight2"
+       },
+       {
+        "id": "selTh9LM25iGlP7kY",
+        "name": "ניסיון יצירת קשר",
+        "color": "redLight2"
+       },
+       {
+        "id": "selPEMzX0q8iCoMxf",
+        "name": "עסקה נסגרה",
+        "color": "blueLight2"
+       }
+      ]
+     }
+    },
+    {
+     "id": "fldl7D5gw6Eby7RNL",
+     "name": "כיוון",
+     "type": "singleSelect",
+     "description": "מי יזם את המגע. משמש להבחנה בין פעילות אחרונה לבין הפנייה האחרונה שלנו.",
+     "config": {
+      "choices": [
+       {
+        "id": "seljIfiC4tUIOa6MG",
+        "name": "יוצא — אנחנו פנינו",
+        "color": "blueLight2"
+       },
+       {
+        "id": "selxlAxavvdkk2PUS",
+        "name": "נכנס — הלקוח פנה",
+        "color": "greenLight2"
+       }
+      ]
+     }
+    },
+    {
+     "id": "fldWE0mflWxBSjzSJ",
+     "name": "תוצאה",
+     "type": "singleSelect",
+     "description": "מה קרה בפועל.",
+     "config": {
+      "choices": [
+       {
+        "id": "selCydIQL1ldmD9Ya",
+        "name": "ענה",
+        "color": "greenLight2"
+       },
+       {
+        "id": "selPnf8CIEKvyYDRb",
+        "name": "לא ענה",
+        "color": "pinkLight2"
+       },
+       {
+        "id": "selx8oDazZL4MSZUY",
+        "name": "נשלח בהצלחה",
+        "color": "tealLight2"
+       },
+       {
+        "id": "selMkpoSh58kxLT8v",
+        "name": "נכשל",
+        "color": "redLight2"
+       },
+       {
+        "id": "selnsNZAeSISpX8Uf",
+        "name": "התקיים",
+        "color": "blueLight2"
+       },
+       {
+        "id": "selrcxPxKq3xnW1ao",
+        "name": "בוטל",
+        "color": "orangeLight2"
+       }
+      ]
+     }
+    },
+    {
+     "id": "fldfSKlmiQKUROfsT",
+     "name": "פירוט",
+     "type": "multilineText",
+     "description": "מלל חופשי — סיכום שיחה, נוסח הודעה או מה שהלקוח אמר."
+    },
+    {
+     "id": "fld7aSdOMi4vMfXBE",
+     "name": "מי ביצע",
+     "type": "singleSelect",
+     "description": "מי מהצוות ביצע את המגע.",
+     "config": {
+      "choices": [
+       {
+        "id": "selZ8fRQVGTF4RSHB",
+        "name": "בר",
+        "color": "blueLight2"
+       },
+       {
+        "id": "selTOXvEdEw2zvHUk",
+        "name": "עומר",
+        "color": "greenLight2"
+       },
+       {
+        "id": "selFWsMyOGAa6wkAA",
+        "name": "טל",
+        "color": "purpleLight2"
+       },
+       {
+        "id": "selNDqN9UAMdCttrt",
+        "name": "שלי",
+        "color": "orangeLight2"
+       },
+       {
+        "id": "sel6ZNYwClRjdlUwR",
+        "name": "המערכת",
+        "color": "grayLight2"
+       },
+       {
+        "id": "selSJ2VIfhRLmHF3I",
+        "name": "עמית",
+        "color": "pinkLight2"
+       }
+      ]
+     }
+    },
+    {
+     "id": "fldGVgaXNoPJZeIum",
+     "name": "מקור הרשומה",
+     "type": "singleSelect",
+     "description": "איך השורה הזו נוצרה. חשוב לאמון — שורה שחולצה מהערות היא שחזור ולא תיעוד בזמן אמת.",
+     "config": {
+      "choices": [
+       {
+        "id": "selkLapHCqSk9ES0P",
+        "name": "תועד בזמן אמת",
+        "color": "greenLight2"
+       },
+       {
+        "id": "selKSH5WDQIwbCRXw",
+        "name": "חולץ מהערות הישנות",
+        "color": "yellowLight2"
+       },
+       {
+        "id": "sel6d6bx6r20aJpSg",
+        "name": "נוצר אוטומטית",
+        "color": "blueLight2"
+       }
+      ]
+     }
+    },
+    {
+     "id": "fldIebccLdg2RSExt",
+     "name": "תאריך",
+     "type": "date",
+     "description": "מתי המגע התרחש.",
+     "config": {
+      "dateFormat": {
+       "name": "european",
+       "format": "D/M/YYYY"
+      }
+     }
+    },
+    {
+     "id": "fld0gGvDh4DoGjIeU",
+     "name": "תהליך",
+     "type": "singleSelect",
+     "description": "לאיזה תהליך המגע שייך. ריק = ידני או אחר. רק ״הודעת סבב״ נחשבת להודעת המעקב של הסבב ומקדמת את התזמון; הודעה ידנית אחרת לא.",
+     "config": {
+      "choices": [
+       {
+        "id": "selrb9rOpmbtBdbC7",
+        "name": "הודעת פתיחה",
+        "color": "cyanLight2"
+       },
+       {
+        "id": "selrmeOspQ08xxub3",
+        "name": "הודעת סבב",
+        "color": "blueLight2"
+       },
+       {
+        "id": "selNdfkCSeWbHwQW5",
+        "name": "תשובה",
+        "color": "greenLight2"
+       }
+      ]
+     }
+    },
+    {
+     "id": "fldrgX8OXeYPBi41P",
+     "name": "כותרת מגע",
+     "type": "formula",
+     "description": "שורת ציר הזמן: מועד · סוג · (הלקוח פנה) · תוצאה · מי. תצוגה בלבד.",
+     "config": {
+      "isValid": true,
+      "formula": "IF({fldWyNk8slPiQPK3Z}, DATETIME_FORMAT(SET_TIMEZONE({fldWyNk8slPiQPK3Z}, 'Asia/Jerusalem'), 'D.M · HH:mm'), \"ללא מועד\") & IF({fldY9rSeT2j1icvYN}, \" · \" & {fldY9rSeT2j1icvYN}, \"\") & IF({fldl7D5gw6Eby7RNL} = \"נכנס — הלקוח פנה\", \" · הלקוח פנה\", \"\") & IF({fldWE0mflWxBSjzSJ}, \" · \" & {fldWE0mflWxBSjzSJ}, \"\") & IF({fld7aSdOMi4vMfXBE}, \" · \" & {fld7aSdOMi4vMfXBE}, \"\")",
+      "referencedFieldIds": [
+       "fldWyNk8slPiQPK3Z",
+       "fldY9rSeT2j1icvYN",
+       "fldl7D5gw6Eby7RNL",
+       "fldWE0mflWxBSjzSJ",
+       "fld7aSdOMi4vMfXBE"
+      ],
+      "result": {
+       "type": "singleLineText"
+      }
+     }
+    },
+    {
+     "id": "fld6uGI1d6G52bcKA",
+     "name": "מועד שנקבע",
+     "type": "dateTime",
+     "description": "התחייבות שסוכמה עם הלקוח במגע הזה — מועד פגישה, שיחה שנקבעה או חזרה שהלקוח ביקש. זה המקור; Interaction Processing מעתיק מכאן לשדה המקביל בליד. להשאיר ריק כשלא סוכם מועד.",
+     "config": {
+      "dateFormat": {
+       "name": "european",
+       "format": "D/M/YYYY"
+      },
+      "timeFormat": {
+       "name": "24hour",
+       "format": "HH:mm"
+      },
+      "timeZone": "Asia/Jerusalem"
+     }
+    },
+    {
+     "id": "fldIBbV9A2nqleNuI",
+     "name": "סוג ההתחייבות",
+     "type": "singleSelect",
+     "description": "מה בדיוק סוכם למועד שנקבע במגע הזה. קובע איזה סוג מגע יסגור את ההתחייבות. ערכים זהים לשדה המקביל בליד.",
+     "config": {
+      "choices": [
+       {
+        "id": "selwDoSGLVD4GQ77c",
+        "name": "פגישה או התנסות",
+        "color": "orangeLight2"
+       },
+       {
+        "id": "selkRt1URIzuulBaD",
+        "name": "שיחה",
+        "color": "blueLight2"
+       },
+       {
+        "id": "selU1z9kjeoaWPaAv",
+        "name": "חזרה שהלקוח ביקש",
+        "color": "yellowLight2"
+       }
+      ]
+     }
+    },
+    {
+     "id": "fldnYOBDSBVEIPqRX",
+     "name": "כמה נרכשו",
+     "type": "number",
+     "description": "רלוונטי רק לשורת מגע מסוג עסקה נסגרה. Interaction Processing מעתיק מכאן לשדה המקביל בליד.",
+     "config": {
+      "precision": 0
+     }
+    },
+    {
+     "id": "fldwn6hBYYjk8J4oD",
+     "name": "סכום עסקה",
+     "type": "currency",
+     "description": "רלוונטי רק לשורת מגע מסוג עסקה נסגרה. Interaction Processing מעתיק מכאן לשדה המקביל בליד.",
+     "config": {
+      "precision": 0,
+      "symbol": "₪"
+     }
+    },
+    {
+     "id": "fldzwAHL0xwVlEDnw",
+     "name": "סכום הצעה",
+     "type": "currency",
+     "description": "סכום הצעת המחיר שנשלחה ללקוח. ממלאים רק כשסוג המגע = הצעת מחיר. לא סכום עסקה (זה רק כשנסגר). מוצג ב-Pipeline ומתגלגל לליד (שחר, 15.10.2026).",
+     "config": {
+      "precision": 0,
+      "symbol": "₪"
+     }
+    }
+   ]
+  },
+  {
+   "id": "tblJU5VbqBSktB41r",
+   "name": "לבדיקה",
+   "description": "שורה לכל בעיה שנמצאה בנתוני ליד: טלפון פסול, שם שלא זוהה, כפילות או סתירה. כל שורה נפתרת בנפרד ומשאירה תיעוד של ההחלטה. שורת כפילות מקושרת לשתי הרשומות המעורבות בבת אחת.",
+   "primaryFieldId": "fld5xioYPo6CE4uA0",
+   "fields": [
+    {
+     "id": "fld5xioYPo6CE4uA0",
+     "name": "הבעיה",
+     "type": "singleLineText",
+     "description": "תיאור קצר בשורה אחת, למשל: כפילות טלפון — קובי / Samah"
+    },
+    {
+     "id": "fldvXQIm5yLZpGl03",
+     "name": "סוג הבעיה",
+     "type": "singleSelect",
+     "description": "סיווג הבעיה, לצורך סינון וניתוב לאנשים שונים.",
+     "config": {
+      "choices": [
+       {
+        "id": "selJ6EPVbe1LSkEJs",
+        "name": "כפילות אפשרית",
+        "color": "purpleLight2"
+       },
+       {
+        "id": "selmX9jVAkA93gAi0",
+        "name": "טלפון לא תקין",
+        "color": "redLight2"
+       },
+       {
+        "id": "selKzxDgVon9Qhxfc",
+        "name": "טלפון חסר",
+        "color": "redLight1"
+       },
+       {
+        "id": "seld2sceGQ9NTLJGX",
+        "name": "מספר לא ישראלי",
+        "color": "orangeLight2"
+       },
+       {
+        "id": "sels9NlcLkGC4hN57",
+        "name": "לא מספר נייד",
+        "color": "orangeLight1"
+       },
+       {
+        "id": "selWZ1Wp9zuvoBoLA",
+        "name": "לא זוהה שם פרטי",
+        "color": "yellowLight2"
+       },
+       {
+        "id": "selVfLRexTROjqsxT",
+        "name": "כמות לא תקינה",
+        "color": "cyanLight2"
+       },
+       {
+        "id": "selGZvBvffMSskq3E",
+        "name": "סתירה בנתונים",
+        "color": "blueLight2"
+       }
+      ]
+     }
+    },
+    {
+     "id": "fldgYiL4MawoEiWDZ",
+     "name": "חומרה",
+     "type": "singleSelect",
+     "description": "מה הנזק בפועל. קובע את סדר הטיפול.",
+     "config": {
+      "choices": [
+       {
+        "id": "selxUODf64IjF1pae",
+        "name": "חוסם שליחה לגמרי",
+        "color": "redLight2"
+       },
+       {
+        "id": "selBcyBswDKJm6XK1",
+        "name": "פוגע באיכות הפנייה",
+        "color": "orangeLight2"
+       },
+       {
+        "id": "seluNFmDQVm6k5niw",
+        "name": "לטיפול בהמשך",
+        "color": "grayLight2"
+       }
+      ]
+     }
+    },
+    {
+     "id": "fld0jJHFDwNeG3o2g",
+     "name": "פרטים",
+     "type": "multilineText",
+     "description": "ההסבר הספציפי — מה בדיוק נמצא ומה צריך להכריע."
+    },
+    {
+     "id": "fldp3f5gTr4IxACvo",
+     "name": "מצב",
+     "type": "singleSelect",
+     "description": "איפה הטיפול בבעיה עומד.",
+     "config": {
+      "choices": [
+       {
+        "id": "selrGc2wXLBxXbGim",
+        "name": "פתוח",
+        "color": "redLight2"
+       },
+       {
+        "id": "selzJVcystIoVD3vb",
+        "name": "בטיפול",
+        "color": "yellowLight2"
+       },
+       {
+        "id": "selUywZMGFGYwlcsX",
+        "name": "טופל",
+        "color": "greenLight2"
+       },
+       {
+        "id": "seln18t56ZcgQ2TyA",
+        "name": "לא רלוונטי",
+        "color": "grayLight2"
+       }
+      ]
+     }
+    },
+    {
+     "id": "fldUWQwRyCWqiQDjL",
+     "name": "ההחלטה שהתקבלה",
+     "type": "multilineText",
+     "description": "מה הוחלט ולמה. נשמר גם אחרי שהבעיה נסגרה."
+    },
+    {
+     "id": "fldwSeULO2TT3sXxQ",
+     "name": "אחראי לטיפול",
+     "type": "singleSelect",
+     "description": "מי אמור להכריע.",
+     "config": {
+      "choices": [
+       {
+        "id": "selvAA0Gj2amI4mtX",
+        "name": "בר",
+        "color": "blueLight2"
+       },
+       {
+        "id": "selxHTLXtj6qhoT27",
+        "name": "עומר",
+        "color": "greenLight2"
+       },
+       {
+        "id": "selO1g22fkvdtPRZo",
+        "name": "טל",
+        "color": "purpleLight2"
+       },
+       {
+        "id": "selK7cGgLvuNio5OW",
+        "name": "שלי",
+        "color": "orangeLight2"
+       }
+      ]
+     }
+    },
+    {
+     "id": "fldJ6uuJoBcnmhF5F",
+     "name": "נמצא בתאריך",
+     "type": "date",
+     "description": "מתי הבעיה זוהתה.",
+     "config": {
+      "dateFormat": {
+       "name": "european",
+       "format": "D/M/YYYY"
+      }
+     }
+    },
+    {
+     "id": "fldxwzqO8stXiYWaP",
+     "name": "טופל בתאריך",
+     "type": "date",
+     "description": "מתי הבעיה נסגרה.",
+     "config": {
+      "dateFormat": {
+       "name": "european",
+       "format": "D/M/YYYY"
+      }
+     }
+    },
+    {
+     "id": "fldwwZ1XziEyGX745",
+     "name": "לידים — ויואלדי",
+     "type": "multipleRecordLinks",
+     "description": "הליד או הלידים המעורבים. בכפילות — שתי הרשומות יחד.",
+     "config": {
+      "linkedTableId": "tbl9SV4GU8kICBARH",
+      "isReversed": false,
+      "prefersSingleRecordLink": false,
+      "inverseLinkFieldId": "flds2G6Yw5kEbOyLU"
+     }
+    },
+    {
+     "id": "fldBBHIMIPRxr6Q9u",
+     "name": "לידים — מזרנים",
+     "type": "multipleRecordLinks",
+     "description": "הליד או הלידים המעורבים בטבלת המזרנים.",
+     "config": {
+      "linkedTableId": "tblctwsCBcoivy8Kf",
+      "isReversed": false,
+      "prefersSingleRecordLink": false,
+      "inverseLinkFieldId": "fldyNTU3FKSrU1sxN"
+     }
+    },
+    {
+     "id": "fldMkzoKYCjS06Hzp",
+     "name": "לידים — ציוד",
+     "type": "multipleRecordLinks",
+     "description": "הליד או הלידים המעורבים בטבלת הציוד.",
+     "config": {
+      "linkedTableId": "tblbpggF99sxcIAvc",
+      "isReversed": false,
+      "prefersSingleRecordLink": false,
+      "inverseLinkFieldId": "fldHWOVSoCyEeP7n4"
+     }
+    },
+    {
+     "id": "fld5JTAwid86Lgyzh",
+     "name": "לידים — סימפוני",
+     "type": "multipleRecordLinks",
+     "description": "הליד או הלידים המעורבים בטבלת סימפוני.",
+     "config": {
+      "linkedTableId": "tblJSFUoHoohJCnDL",
+      "isReversed": false,
+      "prefersSingleRecordLink": false,
+      "inverseLinkFieldId": "fld24s5wMQzBYsoTU"
+     }
+    },
+    {
+     "id": "fldnOGO4AgkAZx3mW",
+     "name": "לידים",
+     "type": "multipleRecordLinks",
+     "config": {
+      "linkedTableId": "tbl91QjpePM88Zp9p",
+      "isReversed": false,
+      "prefersSingleRecordLink": false,
+      "inverseLinkFieldId": "fld9B64RK36SQHEiS"
+     }
+    },
+    {
+     "id": "fldJJuuW1fjq62VHV",
+     "name": "פירוט לתצוגה",
+     "type": "formula",
+     "description": "שורות מוכנות להצגה במסך הליד: מצב הבדיקה, הסוג, החומרה, מה קרה ומה צריך לעשות. שדה תצוגה בלבד.",
+     "config": {
+      "isValid": true,
+      "formula": "IF({fldp3f5gTr4IxACvo}=\"פתוח\",\"⚠ בדיקה פתוחה\",IF({fldp3f5gTr4IxACvo}=\"בטיפול\",\"⏳ בבדיקה\",\"✓ \"&{fldp3f5gTr4IxACvo}))&IF({fldvXQIm5yLZpGl03},\" · \"&{fldvXQIm5yLZpGl03},\"\")&IF({fldgYiL4MawoEiWDZ},\" · \"&{fldgYiL4MawoEiWDZ},\"\")&IF({fldJ6uuJoBcnmhF5F},\" · נמצא \"&DATETIME_FORMAT({fldJ6uuJoBcnmhF5F},'D.M.YYYY'),\"\")&IF({fldwSeULO2TT3sXxQ},\" · אחראי \"&{fldwSeULO2TT3sXxQ},\"\")&\"\\n\"&{fld5xioYPo6CE4uA0}&IF({fld0jJHFDwNeG3o2g},\"\\n\"&{fld0jJHFDwNeG3o2g},\"\")&IF({fldUWQwRyCWqiQDjL},\"\\nההחלטה: \"&{fldUWQwRyCWqiQDjL},\"\")",
+      "referencedFieldIds": [
+       "fldp3f5gTr4IxACvo",
+       "fldvXQIm5yLZpGl03",
+       "fldgYiL4MawoEiWDZ",
+       "fldJ6uuJoBcnmhF5F",
+       "fldwSeULO2TT3sXxQ",
+       "fld5xioYPo6CE4uA0",
+       "fld0jJHFDwNeG3o2g",
+       "fldUWQwRyCWqiQDjL"
+      ],
+      "result": {
+       "type": "singleLineText"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "tblrpzxL73Rbhnhty",
+   "name": "הודעות",
+   "description": "שורה לכל הודעה יוצאת ללקוח: טיוטה שנוצרה מאירוע, מחכה לאישור אדם, ורק אז עוברת לשולח. אף הודעה לא יוצאת בלי אישור, ובלי ששני מתגי השליחה בהגדרות פתוחים. שליחה מוצלחת נרשמת גם ביומן המגעים עם ״תהליך״, וזה מה שמניע את המנוע.",
+   "primaryFieldId": "fldUwb96w8k2Pjtwe",
+   "fields": [
+    {
+     "id": "fldUwb96w8k2Pjtwe",
+     "name": "תיאור",
+     "type": "singleLineText",
+     "description": "מה ההודעה ולמי. נוצר אוטומטית."
+    },
+    {
+     "id": "flduu6ILksC0UWJyj",
+     "name": "ליד",
+     "type": "multipleRecordLinks",
+     "description": "הליד שההודעה מיועדת לו.",
+     "config": {
+      "linkedTableId": "tbl91QjpePM88Zp9p",
+      "isReversed": false,
+      "prefersSingleRecordLink": false,
+      "inverseLinkFieldId": "fldSX1NC6nZDtmkkP"
+     }
+    },
+    {
+     "id": "fld8Iz0v7GuO891n2",
+     "name": "תהליך",
+     "type": "singleSelect",
+     "description": "לאיזה תהליך ההודעה שייכת. אותם ערכים כמו ביומן המגעים.",
+     "config": {
+      "choices": [
+       {
+        "id": "selU82IO8PweY1xMM",
+        "name": "הודעת פתיחה",
+        "color": "cyanLight2"
+       },
+       {
+        "id": "selX2Hm9itPVepu9p",
+        "name": "הודעת סבב",
+        "color": "blueLight2"
+       },
+       {
+        "id": "selwjI0kaLZwgYrXR",
+        "name": "תשובה",
+        "color": "greenLight2"
+       }
+      ]
+     }
+    },
+    {
+     "id": "fld3advNLrTir7pmQ",
+     "name": "סבב",
+     "type": "number",
+     "description": "מספר הסבב להודעת סבב. ריק להודעת פתיחה.",
+     "config": {
+      "precision": 0
+     }
+    },
+    {
+     "id": "fldZtaFruuaEOsNKV",
+     "name": "טיוטה",
+     "type": "multilineText",
+     "description": "הטקסט שיישלח. נוצר מהתבנית, המאשר רשאי לערוך לפני האישור."
+    },
+    {
+     "id": "fldGIvyveO1m9LJxm",
+     "name": "מצב",
+     "type": "singleSelect",
+     "description": "איפה ההודעה עומדת. ממתין לאישור ← מאושר (אדם) ← נשלח או נחסם (מערכת). נדחה = אדם החליט לא לשלוח, וזה חוסם יצירה חוזרת לאותו מפתח. התיישן = המערכת סימנה שהטיוטה איבדה רלוונטיות בעקבות מגע חדש. אינו החלטה אנושית ואינו חוסם טיוטה מעודכנת.",
+     "config": {
+      "choices": [
+       {
+        "id": "sel4VnNz4cBsprL2g",
+        "name": "טיוטה",
+        "color": "grayLight2"
+       },
+       {
+        "id": "sel77I9vsxejrrJMn",
+        "name": "ממתין לאישור",
+        "color": "yellowLight2"
+       },
+       {
+        "id": "selimno2LgO326q7A",
+        "name": "מאושר",
+        "color": "blueLight2"
+       },
+       {
+        "id": "selVI3sWGYo8k4PWt",
+        "name": "נשלח",
+        "color": "greenLight2"
+       },
+       {
+        "id": "seldywhA2ITWRNgs0",
+        "name": "נחסם",
+        "color": "redLight2"
+       },
+       {
+        "id": "selIkDsnyMuavLidP",
+        "name": "נדחה",
+        "color": "grayLight1"
+       },
+       {
+        "id": "selSbewiFFfXCXXCI",
+        "name": "ממתין לשליחה",
+        "color": "orangeLight2"
+       },
+       {
+        "id": "selmZMPNcjJxttQ9f",
+        "name": "שולח",
+        "color": "cyanLight2"
+       },
+       {
+        "id": "selKdpcjrNXwu3Ath",
+        "name": "דורש בירור",
+        "color": "pinkLight2"
+       },
+       {
+        "id": "selXTpm3ZorvMtYZM",
+        "name": "התיישן",
+        "color": "tealLight2"
+       }
+      ]
+     }
+    },
+    {
+     "id": "fldhzIo6iMHEGaniJ",
+     "name": "מאשר",
+     "type": "singleSelect",
+     "description": "מי צריך לאשר. האחראי על הליד ברגע יצירת הטיוטה (בר, 6.9: רפורמרים בר, השאר עומר).",
+     "config": {
+      "choices": [
+       {
+        "id": "sel2EXUzSBz3oGLkp",
+        "name": "בר",
+        "color": "blueLight2"
+       },
+       {
+        "id": "selDkWiz5VLCymnRp",
+        "name": "עומר",
+        "color": "greenLight2"
+       }
+      ]
+     }
+    },
+    {
+     "id": "fldRtyZ4BOCK8f6m4",
+     "name": "תבנית",
+     "type": "singleLineText",
+     "description": "מפתח התבנית שממנה נוצרה הטיוטה."
+    },
+    {
+     "id": "fldZlMAKro6AykLww",
+     "name": "מועד שליחה",
+     "type": "dateTime",
+     "description": "מתי נשלחה בפועל. נכתב על ידי השולח בלבד.",
+     "config": {
+      "dateFormat": {
+       "name": "european",
+       "format": "D/M/YYYY"
+      },
+      "timeFormat": {
+       "name": "24hour",
+       "format": "HH:mm"
+      },
+      "timeZone": "Asia/Jerusalem"
+     }
+    },
+    {
+     "id": "fldKKbG62DQ40YnFH",
+     "name": "סיבת חסימה",
+     "type": "singleLineText",
+     "description": "למה השולח לא שלח: מתג סגור, אין ליצור קשר, טיפול אישי, מחוץ לחלון, טלפון פסול, אין ספק."
+    },
+    {
+     "id": "fldaLjL1BzrdUUzZG",
+     "name": "מזהה חיצוני",
+     "type": "singleLineText",
+     "description": "מזהה ההודעה אצל הספק (WhatsApp). ריק עד שיש ספק."
+    },
+    {
+     "id": "fldUWChnkPnkkrOv3",
+     "name": "מועד יצירה",
+     "type": "formula",
+     "description": "מתי הטיוטה נוצרה. אוטומטי, לא ניתן לעריכה.",
+     "config": {
+      "isValid": true,
+      "formula": "CREATED_TIME()",
+      "referencedFieldIds": [],
+      "result": {
+       "type": "date",
+       "options": {
+        "dateFormat": {
+         "name": "us",
+         "format": "M/D/YYYY"
+        }
+       }
+      }
+     }
+    },
+    {
+     "id": "fldNhfLVkWwQ9PaHq",
+     "name": "מקור ניסוח",
+     "type": "singleSelect",
+     "description": "מי ניסח את הטיוטה. AI = מודל אמיתי · כללים = העשרה דטרמיניסטית או mock · תבנית = fallback, הערכים ברירת המחדל. המאשר רואה את זה לפני שהוא מאשר.",
+     "config": {
+      "choices": [
+       {
+        "id": "seligYgLmYDZ4L7F8",
+        "name": "AI",
+        "color": "purpleLight2"
+       },
+       {
+        "id": "sel6J6KzvSXDSQUUO",
+        "name": "כללים",
+        "color": "blueLight2"
+       },
+       {
+        "id": "selFg7haF7dqR87WV",
+        "name": "תבנית",
+        "color": "grayLight2"
+       }
+      ]
+     }
+    },
+    {
+     "id": "fldLVFeEYniUYsQx5",
+     "name": "ניסיון שליחה הבא",
+     "type": "dateTime",
+     "description": "מתי מותר לנסות שוב הודעה במצב ״ממתין לשליחה״. Message Retry מחזיר ל״מאושר״ רק אחרי המועד הזה.",
+     "config": {
+      "dateFormat": {
+       "name": "european",
+       "format": "D/M/YYYY"
+      },
+      "timeFormat": {
+       "name": "24hour",
+       "format": "HH:mm"
+      },
+      "timeZone": "Asia/Jerusalem"
+     }
+    },
+    {
+     "id": "fldDal51fqpiaz4Pq",
+     "name": "מספר ניסיונות שליחה",
+     "type": "number",
+     "description": "כמה פעמים פנינו לספק בפועל. מתגים סגורים או חלון סגור אינם ניסיון ולא נספרים. מעל התקרה שבהגדרות → נחסם.",
+     "config": {
+      "precision": 0
+     }
+    },
+    {
+     "id": "fldCiEEZoCONzbieb",
+     "name": "שגיאה אחרונה",
+     "type": "singleLineText",
+     "description": "הסיבה הזמנית האחרונה שבגללה ההודעה ממתינה: מתג סגור, מחוץ לחלון, תקלת ספק חולפת. חסימות קבועות נרשמות ב״סיבת חסימה״."
+    },
+    {
+     "id": "fldafjveLRUoQUnQp",
+     "name": "החלטה",
+     "type": "singleSelect",
+     "description": "השדה היחיד שהמאשר נוגע בו. אשר → ההודעה עוברת ל״מאושר״ והשולח רץ. דחה → ״נדחה״. נשמר כ-audit של ההחלטה האנושית, לא מנוקה (שחר, 7.9.2026). מועד ההחלטה בשדה הנוסחה לידו.",
+     "config": {
+      "choices": [
+       {
+        "id": "selJwBtJCL0wy9HjE",
+        "name": "אשר",
+        "color": "greenLight2"
+       },
+       {
+        "id": "selJpJVBzEP7cezTS",
+        "name": "דחה",
+        "color": "redLight2"
+       }
+      ]
+     }
+    },
+    {
+     "id": "fldhjAF02KmyK4EAu",
+     "name": "מועד החלטה",
+     "type": "formula",
+     "description": "מתי נרשמה או שונתה ההחלטה האנושית. audit.",
+     "config": {
+      "isValid": true,
+      "formula": "LAST_MODIFIED_TIME({fldafjveLRUoQUnQp})",
+      "referencedFieldIds": [
+       "fldafjveLRUoQUnQp"
+      ],
+      "result": {
+       "type": "date",
+       "options": {
+        "dateFormat": {
+         "name": "us",
+         "format": "M/D/YYYY"
+        }
+       }
+      }
+     }
+    },
+    {
+     "id": "fldpTshGGE9ZjmT2O",
+     "name": "ליד · שם לפנייה",
+     "type": "multipleLookupValues",
+     "config": {
+      "isValid": true,
+      "recordLinkFieldId": "flduu6ILksC0UWJyj",
+      "fieldIdInLinkedTable": "fldbmFm4a62391oGb",
+      "result": {
+       "type": "singleLineText"
+      }
+     }
+    },
+    {
+     "id": "fldCj9AKhzMvnVRg2",
+     "name": "ליד · טלפון",
+     "type": "multipleLookupValues",
+     "config": {
+      "isValid": true,
+      "recordLinkFieldId": "flduu6ILksC0UWJyj",
+      "fieldIdInLinkedTable": "fldvB6SsLTeFttB1y",
+      "result": {
+       "type": "singleLineText"
+      }
+     }
+    },
+    {
+     "id": "fldaIGkdJzEsuduFe",
+     "name": "ליד · קו מוצר",
+     "type": "multipleLookupValues",
+     "config": {
+      "isValid": true,
+      "recordLinkFieldId": "flduu6ILksC0UWJyj",
+      "fieldIdInLinkedTable": "fldWGKe4vGkx1XVvA",
+      "result": {
+       "type": "singleSelect",
+       "options": {
+        "choices": [
+         {
+          "id": "selzcLeAtDHw0btv9",
+          "name": "ויואלדי",
+          "color": "blueLight2"
+         },
+         {
+          "id": "selwYmB7oFJVqgvCR",
+          "name": "מזרנים",
+          "color": "tealLight2"
+         },
+         {
+          "id": "selTureSDEaz0C6Hc",
+          "name": "סימפוני",
+          "color": "purpleLight2"
+         },
+         {
+          "id": "sel0ttjTRLVH7QNFM",
+          "name": "ציוד",
+          "color": "orangeLight2"
+         }
+        ]
+       }
+      }
+     }
+    },
+    {
+     "id": "fldwoUSAuP6Oo5cLO",
+     "name": "ליד · כמות",
+     "type": "multipleLookupValues",
+     "config": {
+      "isValid": true,
+      "recordLinkFieldId": "flduu6ILksC0UWJyj",
+      "fieldIdInLinkedTable": "fldvrsoDbTXuVe4iX",
+      "result": {
+       "type": "number",
+       "options": {
+        "precision": 0
+       }
+      }
+     }
+    },
+    {
+     "id": "fldeg3G464JMSISUR",
+     "name": "ליד · עיר",
+     "type": "multipleLookupValues",
+     "config": {
+      "isValid": true,
+      "recordLinkFieldId": "flduu6ILksC0UWJyj",
+      "fieldIdInLinkedTable": "flde7KAqyoktWZoPy",
+      "result": {
+       "type": "singleLineText"
+      }
+     }
+    },
+    {
+     "id": "fldxnx6uE3ZSOMPQZ",
+     "name": "ליד · סוג לקוח",
+     "type": "multipleLookupValues",
+     "config": {
+      "isValid": true,
+      "recordLinkFieldId": "flduu6ILksC0UWJyj",
+      "fieldIdInLinkedTable": "fldeM9Ce7N7mK5QJo",
+      "result": {
+       "type": "singleSelect",
+       "options": {
+        "choices": [
+         {
+          "id": "selfaZQMsN3HzDhAI",
+          "name": "עסקי",
+          "color": "blueLight2"
+         },
+         {
+          "id": "sely9A87YEZ8fJPNB",
+          "name": "פרטי",
+          "color": "tealLight2"
+         },
+         {
+          "id": "sel4osOMQ0makOhJL",
+          "name": "לא ידוע",
+          "color": "grayLight2"
+         }
+        ]
+       }
+      }
+     }
+    },
+    {
+     "id": "fldjwrX4rJvuEznrG",
+     "name": "ליד · עדיפות",
+     "type": "multipleLookupValues",
+     "config": {
+      "isValid": true,
+      "recordLinkFieldId": "flduu6ILksC0UWJyj",
+      "fieldIdInLinkedTable": "fldrAP6pYmclXbGsw",
+      "result": {
+       "type": "number",
+       "options": {
+        "precision": 0
+       }
+      }
+     }
+    },
+    {
+     "id": "fldTQyTwoVKWWSIV5",
+     "name": "ליד · סטטוס מכירה",
+     "type": "multipleLookupValues",
+     "config": {
+      "isValid": true,
+      "recordLinkFieldId": "flduu6ILksC0UWJyj",
+      "fieldIdInLinkedTable": "fldMY3LA2vVjdPVdB",
+      "result": {
+       "type": "singleSelect",
+       "options": {
+        "choices": [
+         {
+          "id": "selCDmHlVskMfP0Iv",
+          "name": "חדש",
+          "color": "grayLight2"
+         },
+         {
+          "id": "selCwZiveT6fLmQIB",
+          "name": "ליד פוטנציאלי לפני פגישה",
+          "color": "yellowLight2"
+         },
+         {
+          "id": "selSZUk419I8B3COm",
+          "name": "ליד חם",
+          "color": "orangeLight2"
+         },
+         {
+          "id": "sel5rFhizE9Dt1ZXL",
+          "name": "רלוונטי לעתיד",
+          "color": "blueLight2"
+         },
+         {
+          "id": "seld9J1c7nv7i1IeJ",
+          "name": "נסגרה עסקה",
+          "color": "greenLight2"
+         },
+         {
+          "id": "selmNZhV139JSJqtt",
+          "name": "לא רלוונטי / נפלה עסקה",
+          "color": "redLight2"
+         }
+        ]
+       }
+      }
+     }
+    },
+    {
+     "id": "fld7NNjTWEkrUoMav",
+     "name": "ליד · מצב טיפול",
+     "type": "multipleLookupValues",
+     "config": {
+      "isValid": true,
+      "recordLinkFieldId": "flduu6ILksC0UWJyj",
+      "fieldIdInLinkedTable": "fldNbWZuvHafv2yUM",
+      "result": {
+       "type": "singleLineText"
+      }
+     }
+    },
+    {
+     "id": "fldmB9yzs9129Pd6J",
+     "name": "ליד · אחראי",
+     "type": "multipleLookupValues",
+     "config": {
+      "isValid": true,
+      "recordLinkFieldId": "flduu6ILksC0UWJyj",
+      "fieldIdInLinkedTable": "fldc9BJfqXLxwPlJ1",
+      "result": {
+       "type": "singleSelect",
+       "options": {
+        "choices": [
+         {
+          "id": "seloPmlNWEDizoZCb",
+          "name": "בר",
+          "color": "blueLight2"
+         },
+         {
+          "id": "selbh3WaP4gJfLiAw",
+          "name": "עומר",
+          "color": "greenLight2"
+         },
+         {
+          "id": "sel73pun2Mn1TUXzP",
+          "name": "טל",
+          "color": "purpleLight2"
+         },
+         {
+          "id": "selnsL2c6CYukfEvr",
+          "name": "שלי",
+          "color": "orangeLight2"
+         }
+        ]
+       }
+      }
+     }
+    },
+    {
+     "id": "flddZbXKnnYIddLLt",
+     "name": "שיחה מוצעת",
+     "type": "multipleLookupValues",
+     "config": {
+      "isValid": true,
+      "recordLinkFieldId": "flduu6ILksC0UWJyj",
+      "fieldIdInLinkedTable": "fldMbD7vv9rXaTcUp",
+      "result": {
+       "type": "singleLineText"
+      }
+     }
+    },
+    {
+     "id": "fld4kYCnsKTZP86cr",
+     "name": "הערה פנימית",
+     "type": "multipleLookupValues",
+     "config": {
+      "isValid": true,
+      "recordLinkFieldId": "flduu6ILksC0UWJyj",
+      "fieldIdInLinkedTable": "fld5ophHFlD0xoMos",
+      "result": {
+       "type": "multilineText"
+      }
+     }
+    },
+    {
+     "id": "fld47gR8sfUWvZ3wv",
+     "name": "הלקוח כתב",
+     "type": "multipleLookupValues",
+     "config": {
+      "isValid": true,
+      "recordLinkFieldId": "flduu6ILksC0UWJyj",
+      "fieldIdInLinkedTable": "fld5QbOXhoogr6CTX",
+      "result": {
+       "type": "multilineText"
+      }
+     }
+    },
+    {
+     "id": "fldpD4yIAQgfdGudS",
+     "name": "מצב ההודעה",
+     "type": "formula",
+     "description": "מצב ההודעה במילים של הצוות, קריאה בלבד. המצב הטכני (מאושר/ממתין לשליחה/שולח) לא מוצג בממשק. הממשק מציג רק את השדה הזה.",
+     "config": {
+      "isValid": true,
+      "formula": "SWITCH({fldGIvyveO1m9LJxm}, \"טיוטה\", \"בהכנה\", \"ממתין לאישור\", \"ממתין לאישור\", \"מאושר\", \"אושר, בדרך לשליחה\", \"ממתין לשליחה\", \"אושר, בדרך לשליחה\", \"שולח\", \"אושר, בדרך לשליחה\", \"נשלח\", \"נשלח\", \"נדחה\", \"נדחה\", \"התיישן\", \"לא רלוונטית עוד — התרחש מגע חדש\", \"נחסם\", \"נחסם\", \"דורש בירור\", \"דורש בירור\", {fldGIvyveO1m9LJxm})",
+      "referencedFieldIds": [
+       "fldGIvyveO1m9LJxm"
+      ],
+      "result": {
+       "type": "singleLineText"
+      }
+     }
+    },
+    {
+     "id": "fldRSUItbWDnAhjHA",
+     "name": "תהליך · תצוגה",
+     "type": "formula",
+     "description": "תהליך + סבב, קריאה בלבד.",
+     "config": {
+      "isValid": true,
+      "formula": "{fld8Iz0v7GuO891n2} & IF({fld3advNLrTir7pmQ}, \" · סבב \" & {fld3advNLrTir7pmQ}, \"\")",
+      "referencedFieldIds": [
+       "fld8Iz0v7GuO891n2",
+       "fld3advNLrTir7pmQ"
+      ],
+      "result": {
+       "type": "singleLineText"
+      }
+     }
+    },
+    {
+     "id": "fldrWOs7rQgPO9J0Z",
+     "name": "מקור הניסוח",
+     "type": "formula",
+     "description": "AI / כללים / תבנית, קריאה בלבד.",
+     "config": {
+      "isValid": true,
+      "formula": "{fldNhfLVkWwQ9PaHq} & \"\"",
+      "referencedFieldIds": [
+       "fldNhfLVkWwQ9PaHq"
+      ],
+      "result": {
+       "type": "singleLineText"
+      }
+     }
+    },
+    {
+     "id": "fldcDoj8SKPgdPGgh",
+     "name": "פרטי שליחה",
+     "type": "formula",
+     "description": "מועד שליחה, סיבת חסימה, שגיאה אחרונה ומספר ניסיונות, בשורה אחת. קריאה בלבד.",
+     "config": {
+      "isValid": true,
+      "formula": "IF({fldZlMAKro6AykLww}, \"נשלח \" & DATETIME_FORMAT(SET_TIMEZONE({fldZlMAKro6AykLww}, 'Asia/Jerusalem'), 'D/M HH:mm'), \"\") & IF({fldKKbG62DQ40YnFH}, \" · חסימה: \" & {fldKKbG62DQ40YnFH}, \"\") & IF({fldCiEEZoCONzbieb}, \" · שגיאה: \" & {fldCiEEZoCONzbieb}, \"\") & IF({fldDal51fqpiaz4Pq}, \" · ניסיונות: \" & {fldDal51fqpiaz4Pq}, \"\")",
+      "referencedFieldIds": [
+       "fldZlMAKro6AykLww",
+       "fldKKbG62DQ40YnFH",
+       "fldCiEEZoCONzbieb",
+       "fldDal51fqpiaz4Pq"
+      ],
+      "result": {
+       "type": "singleLineText"
+      }
+     }
+    },
+    {
+     "id": "fldOHlV5hxfzuyocV",
+     "name": "כותרת הודעה",
+     "type": "formula",
+     "description": "תהליך · סבב · הליד. הכותרת של ההודעה בכל מסך. תצוגה בלבד.",
+     "config": {
+      "isValid": true,
+      "formula": "IF({fldGIvyveO1m9LJxm}=\"ממתין לאישור\",\"לאישור · \",IF({fldpD4yIAQgfdGudS},{fldpD4yIAQgfdGudS}&\" · \",\"\"))&{fldRSUItbWDnAhjHA}&IF({flduu6ILksC0UWJyj},\" · \"&{flduu6ILksC0UWJyj},\"\")",
+      "referencedFieldIds": [
+       "fldGIvyveO1m9LJxm",
+       "fldpD4yIAQgfdGudS",
+       "fldRSUItbWDnAhjHA",
+       "flduu6ILksC0UWJyj"
+      ],
+      "result": {
+       "type": "singleLineText"
+      }
+     }
+    },
+    {
+     "id": "fldWOGaNPcLFLNPvR",
+     "name": "פרטי המתנה",
+     "type": "formula",
+     "description": "מחכה למי · מתי נוצרה · מצב (כשאינה ממתינה). כותרת המשנה בתור האישורים. תצוגה בלבד.",
+     "config": {
+      "isValid": true,
+      "formula": "IF({fldGIvyveO1m9LJxm} = \"ממתין לאישור\", IF({fldhzIo6iMHEGaniJ}, \"מחכה ל\" & {fldhzIo6iMHEGaniJ}, \"מחכה לאישור\") & \" · \", \"\") & \"נוצרה \" & DATETIME_FORMAT(SET_TIMEZONE({fldUWChnkPnkkrOv3}, 'Asia/Jerusalem'), 'D.M HH:mm') & IF({fldGIvyveO1m9LJxm} != \"ממתין לאישור\", \" · \" & {fldpD4yIAQgfdGudS}, \"\")",
+      "referencedFieldIds": [
+       "fldGIvyveO1m9LJxm",
+       "fldhzIo6iMHEGaniJ",
+       "fldUWChnkPnkkrOv3",
+       "fldpD4yIAQgfdGudS"
+      ],
+      "result": {
+       "type": "singleLineText"
+      }
+     }
+    },
+    {
+     "id": "fldwvptUmHHCXOLlH",
+     "name": "סדר הודעה",
+     "type": "formula",
+     "description": "מפתח מיון: ממתינה לאישור ראשונה, אחר כך בדרך לשליחה, חריגות, והשאר. לא מוצג בממשק.",
+     "config": {
+      "isValid": true,
+      "formula": "SWITCH({fldGIvyveO1m9LJxm}, \"ממתין לאישור\", \"0\", \"מאושר\", \"1\", \"ממתין לשליחה\", \"1\", \"שולח\", \"1\", \"דורש בירור\", \"2\", \"נחסם\", \"2\", \"3\")",
+      "referencedFieldIds": [
+       "fldGIvyveO1m9LJxm"
+      ],
+      "result": {
+       "type": "singleLineText"
+      }
+     }
+    },
+    {
+     "id": "fldm4kK1YQJgnEdUb",
+     "name": "הליד",
+     "type": "multipleLookupValues",
+     "description": "כותרת הליד לתור האישורים.",
+     "config": {
+      "isValid": true,
+      "recordLinkFieldId": "flduu6ILksC0UWJyj",
+      "fieldIdInLinkedTable": "fldxplqe7okD0DOHn",
+      "result": {
+       "type": "singleLineText"
+      }
+     }
+    },
+    {
+     "id": "fldWoZEO9Ab9xjFrP",
+     "name": "מצב הליד",
+     "type": "multipleLookupValues",
+     "description": "מצב הליד במילים, לתור האישורים.",
+     "config": {
+      "isValid": true,
+      "recordLinkFieldId": "flduu6ILksC0UWJyj",
+      "fieldIdInLinkedTable": "fldwVIpy8AKP5cORL",
+      "result": {
+       "type": "singleLineText"
+      }
+     }
+    },
+    {
+     "id": "fldLaSovVRH0mRvzb",
+     "name": "מעקב",
+     "type": "multipleLookupValues",
+     "description": "שורת המעקב של הליד, לתור האישורים.",
+     "config": {
+      "isValid": true,
+      "recordLinkFieldId": "flduu6ILksC0UWJyj",
+      "fieldIdInLinkedTable": "fldmejQH8Ie289tav",
+      "result": {
+       "type": "singleLineText"
+      }
+     }
+    },
+    {
+     "id": "fldNUtVoYtooQhxPw",
+     "name": "מה עכשיו",
+     "type": "multipleLookupValues",
+     "description": "הפעולה הבאה של הליד, לתור האישורים.",
+     "config": {
+      "isValid": true,
+      "recordLinkFieldId": "flduu6ILksC0UWJyj",
+      "fieldIdInLinkedTable": "fldBnzbAl5UDchsDS",
+      "result": {
+       "type": "singleLineText"
+      }
+     }
+    },
+    {
+     "id": "fldKKux4feDnTElbq",
+     "name": "הקשר",
+     "type": "multipleLookupValues",
+     "description": "שורת ההקשר של הליד לתור האישורים.",
+     "config": {
+      "isValid": true,
+      "recordLinkFieldId": "flduu6ILksC0UWJyj",
+      "fieldIdInLinkedTable": "fld0F9M0UaFctgicH",
+      "result": {
+       "type": "singleLineText"
+      }
+     }
+    },
+    {
+     "id": "fldgCD1IandjfnBPs",
+     "name": "פעילה לאישור",
+     "type": "formula",
+     "description": "תצוגת V2 בלבד. משמש לסינון בתוך Lead Workspace כך שיוצגו רק טיוטות שממתינות כרגע להחלטה.",
+     "config": {
+      "isValid": true,
+      "formula": "IF({fldGIvyveO1m9LJxm}=\"ממתין לאישור\",\"כן\",\"\")",
+      "referencedFieldIds": [
+       "fldGIvyveO1m9LJxm"
+      ],
+      "result": {
+       "type": "singleLineText"
+      }
+     }
+    },
+    {
+     "id": "fld5zfEMfNTqWUjx3",
+     "name": "סיבת האישור",
+     "type": "formula",
+     "description": "תצוגת V2 בלבד. מסביר למאשר למה הטיוטה נוצרה ומה ההקשר העסקי.",
+     "config": {
+      "isValid": true,
+      "formula": "IF({fld8Iz0v7GuO891n2}=\"הודעת פתיחה\",\"ליד חדש — הודעת פתיחה מוכנה\",IF({fld8Iz0v7GuO891n2}=\"תשובה\",\"הלקוח חזר — תשובה מוכנה\",IF({fld8Iz0v7GuO891n2}=\"הודעת סבב\",\"הודעת מעקב מוכנה\"&IF({fld3advNLrTir7pmQ},\" · סבב \"&{fld3advNLrTir7pmQ}&\"/4\",\"\"),\"טיוטה מוכנה לאישור\")))",
+      "referencedFieldIds": [
+       "fld8Iz0v7GuO891n2",
+       "fld3advNLrTir7pmQ"
+      ],
+      "result": {
+       "type": "singleLineText"
+      }
+     }
+    },
+    {
+     "id": "flduwHj2vdpRrNZ6f",
+     "name": "תווית לאישור",
+     "type": "formula",
+     "description": "מה צריך לאשר, במילות של הצוות, נגזר מההודעה עצמה ולא ממצב הליד. ריק כשההודעה אינה ממתינה לאישור. תצוגה בלבד.",
+     "config": {
+      "isValid": true,
+      "formula": "IF({fldGIvyveO1m9LJxm}=\"ממתין לאישור\", SWITCH({fld8Iz0v7GuO891n2}, \"תשובה\", \"לאשר תשובה ללקוח\", \"הודעת פתיחה\", \"לאשר הודעת פתיחה\", \"הודעת סבב\", \"לאשר הודעת מעקב · סבב \"&{fld3advNLrTir7pmQ}&\"/4\", \"לאשר הודעה\"), \"\")",
+      "referencedFieldIds": [
+       "fldGIvyveO1m9LJxm",
+       "fld8Iz0v7GuO891n2",
+       "fld3advNLrTir7pmQ"
+      ],
+      "result": {
+       "type": "singleLineText"
+      }
+     }
+    },
+    {
+     "id": "fldguvGb7MtaH8pp3",
+     "name": "סיבת חסימה פעילה",
+     "type": "formula",
+     "description": "תצוגה בלבד. סיבת החסימה רק כשההודעה באמת חסומה או דורשת בירור. הודעה שהתיישנה או נשלחה מחזירה ריק. משמש את נוסחת סיבת עיכוב בלידים כדי שסיבות ישנות לא יזהמו את המסך (שחר, 14.10.2026).",
+     "config": {
+      "isValid": true,
+      "formula": "IF(OR({fldGIvyveO1m9LJxm}=\"נחסם\", {fldGIvyveO1m9LJxm}=\"דורש בירור\"), {fldKKbG62DQ40YnFH}, \"\")",
+      "referencedFieldIds": [
+       "fldGIvyveO1m9LJxm",
+       "fldKKbG62DQ40YnFH"
+      ],
+      "result": {
+       "type": "singleLineText"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "tblbHmnRRWY9Cw9JX",
+   "name": "תבניות הודעה",
+   "description": "נוסחי ההודעות שמהם נוצרות טיוטות. placeholders בסוגריים מסולסלים: {שם לפנייה} {קו מוצר} {אחראי}. מפתח = תהליך, ולהודעת סבב גם מספר: ״הודעת סבב 1״. אין תבנית פעילה = אין טיוטה, והמערכת אומרת את זה בלוג.",
+   "primaryFieldId": "flduMSzpAuYFBasR0",
+   "fields": [
+    {
+     "id": "flduMSzpAuYFBasR0",
+     "name": "מפתח",
+     "type": "singleLineText",
+     "description": "הודעת פתיחה · הודעת סבב 1 · הודעת סבב 2 · הודעת סבב 3 · הודעת סבב 4. לא לשנות בלי לעדכן את הקוד."
+    },
+    {
+     "id": "fldQkwTDm71Ei31si",
+     "name": "טקסט",
+     "type": "multilineText",
+     "description": "הנוסח. placeholders: {שם לפנייה} {קו מוצר} {אחראי}. שם לפנייה ריק → הפנייה בלי שם."
+    },
+    {
+     "id": "fldUmBbeIqyEnYiRz",
+     "name": "פעיל",
+     "type": "checkbox",
+     "description": "רק תבנית פעילה משמשת.",
+     "config": {
+      "icon": "check",
+      "color": "greenBright"
+     }
+    }
+   ]
+  },
+  {
+   "id": "tblwVAmvQ5srhad1h",
+   "name": "הגדרות",
+   "description": "הפרמטרים של המערכת, שורה למפתח. הסקריפטים קוראים מכאן בזמן ריצה. מפתח נדרש חסר או פגום מפיל את הסקריפט בקול; מפתח אופציונלי ריק מכבה רק את מה שתלוי בו. בשכפול לבסיס חדש: לעדכן ״בסיס״ ו״סביבה״, ולהשאיר את שני מתגי השליחה על false עד הפעלה מפורשת.",
+   "primaryFieldId": "fldTsffoksq5OPsRD",
+   "fields": [
+    {
+     "id": "fldTsffoksq5OPsRD",
+     "name": "מפתח",
+     "type": "singleLineText",
+     "description": "שם הפרמטר, כפי שהסקריפטים מחפשים אותו. לא לשנות בלי לעדכן את הקוד."
+    },
+    {
+     "id": "fldd0SyE8ff4pcmCJ",
+     "name": "ערך",
+     "type": "singleLineText",
+     "description": "הערך. מספר, טקסט, true/false או תאריך YYYY-MM-DD. ריק = לא הוחלט."
+    },
+    {
+     "id": "fldQjzJmiHFkCV8tr",
+     "name": "הערה",
+     "type": "multilineText",
+     "description": "מה הפרמטר עושה, מי קבע אותו ומתי."
+    }
+   ]
+  }
+ ]
+}
