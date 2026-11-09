@@ -1,0 +1,313 @@
+{
+  "base": "appXkWig8vi5kwzAa",
+  "pulledAt": "2026-11-09",
+  "draftEqualsDeployed": true,
+  "automations": [
+    {
+      "automation": "Lead Intake",
+      "id": "wfllol60RMRxYTLyB",
+      "deploymentStatus": "deployed",
+      "configurationStatus": "valid",
+      "trigger": {
+        "type": "recordCreated",
+        "inputs": {
+          "tableId": "tbl91QjpePM88Zp9p"
+        }
+      },
+      "inputVariables": {
+        "leadId": {
+          "$ref": "trigger",
+          "path": [
+            "id"
+          ]
+        }
+      },
+      "canonicalFile": "lead-intake.js",
+      "scriptFile": "deployed/lead-intake.js",
+      "version": "2.1.0",
+      "lines": 321,
+      "sha256": "ef54df1a97335195003010255564a97efb821c713bd2d6f9a33a03753f44fe46"
+    },
+    {
+      "automation": "Interaction Processing",
+      "id": "wflrgxDhDRaZoZxtc",
+      "deploymentStatus": "deployed",
+      "configurationStatus": "valid",
+      "trigger": {
+        "type": "recordCreated",
+        "inputs": {
+          "tableId": "tblvlb654Vb0cOfZL"
+        }
+      },
+      "inputVariables": {
+        "interactionId": {
+          "$ref": "trigger",
+          "path": [
+            "id"
+          ]
+        }
+      },
+      "canonicalFile": "lead-recalculation.js",
+      "scriptFile": "deployed/interaction-processing.js",
+      "version": "2.8.0",
+      "lines": 465,
+      "sha256": "e32964031724bce51e1e81268e4f5274b91f8be001cc48aee3529c6aa9f46ecf"
+    },
+    {
+      "automation": "Lead Inputs Changed",
+      "id": "wflibWEKPeyXhMYMB",
+      "deploymentStatus": "deployed",
+      "configurationStatus": "valid",
+      "trigger": {
+        "type": "recordUpdated",
+        "inputs": {
+          "tableId": "tbl91QjpePM88Zp9p",
+          "watchFields": [
+            "fldMY3LA2vVjdPVdB",
+            "fldMdVhsvIUcSmTX8"
+          ]
+        }
+      },
+      "inputVariables": {
+        "leadId": {
+          "$ref": "trigger",
+          "path": [
+            "id"
+          ]
+        }
+      },
+      "canonicalFile": "lead-recalculation.js",
+      "scriptFile": "deployed/lead-inputs-changed.js",
+      "version": "2.8.0",
+      "lines": 465,
+      "sha256": "e32964031724bce51e1e81268e4f5274b91f8be001cc48aee3529c6aa9f46ecf"
+    },
+    {
+      "automation": "Message Drafting",
+      "id": "wflxAbb6kthSR9AD2",
+      "deploymentStatus": "deployed",
+      "configurationStatus": "valid",
+      "trigger": {
+        "type": "recordMatchesConditions",
+        "inputs": {
+          "tableId": "tbl91QjpePM88Zp9p",
+          "filtersObj": {
+            "obj": {
+              "operator": "and",
+              "operands": {
+                "tuple": [
+                  {
+                    "obj": {
+                      "operator": "=",
+                      "operands": {
+                        "tuple": [
+                          "fldoy2yHibIG89U5G",
+                          "selkU3Nj9ho1IAvQH"
+                        ]
+                      },
+                      "operatorOptions": null
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        }
+      },
+      "inputVariables": {
+        "leadId": {
+          "$ref": "trigger",
+          "path": [
+            "id"
+          ]
+        }
+      },
+      "canonicalFile": "message-draft.js",
+      "scriptFile": "deployed/message-drafting.js",
+      "version": "1.4.0",
+      "lines": 372,
+      "sha256": "3d627b7a9f863158ef37fd5a4c0d6079486d476183b0d3747b0a848593484031"
+    },
+    {
+      "automation": "Reply Drafting",
+      "id": "wflO67fSndRxCpCNU",
+      "deploymentStatus": "deployed",
+      "configurationStatus": "valid",
+      "trigger": {
+        "type": "recordMatchesConditions",
+        "inputs": {
+          "tableId": "tbl91QjpePM88Zp9p",
+          "filtersObj": {
+            "obj": {
+              "operator": "and",
+              "operands": {
+                "tuple": [
+                  {
+                    "obj": {
+                      "operator": "=",
+                      "operands": {
+                        "tuple": [
+                          "fldoy2yHibIG89U5G",
+                          "selzEhavtLqNdNQWL"
+                        ]
+                      },
+                      "operatorOptions": null
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        }
+      },
+      "inputVariables": {
+        "leadId": {
+          "$ref": "trigger",
+          "path": [
+            "id"
+          ]
+        }
+      },
+      "canonicalFile": "message-draft.js",
+      "scriptFile": "deployed/reply-drafting.js",
+      "version": "1.3.0",
+      "lines": 368,
+      "sha256": "cda8f9eb88adc92d9c1bf71e72dbd7c8bb6affd2208f741de9b1ae5ece22152f"
+    },
+    {
+      "automation": "Message Decision",
+      "id": "wflXvbxF41ywPkpyO",
+      "deploymentStatus": "deployed",
+      "configurationStatus": "valid",
+      "trigger": {
+        "type": "recordUpdated",
+        "inputs": {
+          "tableId": "tblrpzxL73Rbhnhty",
+          "watchFields": [
+            "fldafjveLRUoQUnQp"
+          ]
+        }
+      },
+      "inputVariables": {
+        "messageId": {
+          "$ref": "trigger",
+          "path": [
+            "id"
+          ]
+        }
+      },
+      "canonicalFile": "message-decision.js",
+      "scriptFile": "deployed/message-decision.js",
+      "version": "1.0.0",
+      "lines": 88,
+      "sha256": "922a9d4b85515eecbe14d607dd47b982e57127aabab1582d375849ef20a48bdd"
+    },
+    {
+      "automation": "Message Sending",
+      "id": "wfltEotRIkutOPUjI",
+      "deploymentStatus": "deployed",
+      "configurationStatus": "valid",
+      "trigger": {
+        "type": "recordMatchesConditions",
+        "inputs": {
+          "tableId": "tblrpzxL73Rbhnhty",
+          "filtersObj": {
+            "obj": {
+              "operator": "and",
+              "operands": {
+                "tuple": [
+                  {
+                    "obj": {
+                      "operator": "=",
+                      "operands": {
+                        "tuple": [
+                          "fldGIvyveO1m9LJxm",
+                          "selimno2LgO326q7A"
+                        ]
+                      },
+                      "operatorOptions": null
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        }
+      },
+      "inputVariables": {
+        "messageId": {
+          "$ref": "trigger",
+          "path": [
+            "id"
+          ]
+        }
+      },
+      "canonicalFile": "message-send.js",
+      "scriptFile": "deployed/message-sending.js",
+      "version": "1.3.0",
+      "lines": 283,
+      "sha256": "c92f982905b6163ae2e6f9973c34aca9a7b2d6390201e59527df184f7c127e6c"
+    },
+    {
+      "automation": "Message Retry",
+      "id": "wflnWQPyFg3gOd1u1",
+      "deploymentStatus": "deployed",
+      "configurationStatus": "valid",
+      "trigger": {
+        "type": "cron",
+        "inputs": {
+          "type": "hourly",
+          "config": {
+            "obj": {
+              "width": 1
+            }
+          },
+          "start": "2026-09-07T10:53:00.000Z"
+        }
+      },
+      "inputVariables": null,
+      "canonicalFile": "message-retry.js",
+      "scriptFile": "deployed/message-retry.js",
+      "version": "1.0.0",
+      "lines": 105,
+      "sha256": "848fcd7effb2bacf7c7c7ae99fad14cf42e451b15657cc83bda053c9947bd4f7"
+    },
+    {
+      "automation": "Lead Stuck Report",
+      "id": "wflPvvUw9YzLlb3F1",
+      "deploymentStatus": "deployed",
+      "configurationStatus": "valid",
+      "trigger": {
+        "type": "cron",
+        "inputs": {
+          "type": "daily",
+          "config": {
+            "obj": {
+              "localTriggerTimes": {
+                "tuple": [
+                  {
+                    "obj": {
+                      "hour": 9,
+                      "minute": 0,
+                      "second": 0
+                    }
+                  }
+                ]
+              },
+              "width": 1,
+              "tz": "Asia/Jerusalem",
+              "dateModified": "2026-09-07T08:35:43.677Z"
+            }
+          },
+          "start": "2026-09-07T09:00:00.000Z"
+        }
+      },
+      "inputVariables": null,
+      "canonicalFile": "stuck-leads.js",
+      "scriptFile": "deployed/lead-stuck-report.js",
+      "version": "2.0.0",
+      "lines": 146,
+      "sha256": "28c1c5bcbc5e34404ed79d7705d87c28b57a33daaef17f390f5bc0d48127ae12"
+    }
+  ]
+}
