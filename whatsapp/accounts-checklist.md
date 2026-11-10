@@ -16,7 +16,7 @@
 | 4 | **אפליקציה מסוג Business** עם המוצר **WhatsApp**, משויכת לעסק מסעיף 1 | developers.facebook.com → My Apps | נוצרים WhatsApp Business Account (WABA) ו**מספר בדיקה** חינמי | בדיקות |
 | 5 | **System User + טוקן קבוע** עם הרשאות `whatsapp_business_messaging` ו-`whatsapp_business_management`, משויך לאפליקציה ול-WABA | Business Settings → Users → System users | הטוקן הזמני מהאפליקציה פג תוך יום. הטוקן הקבוע נכנס כ-secret `WHATSAPP_TOKEN` | בדיקות ממושכות |
 | 6 | **אמצעי תשלום** ב-WABA | WhatsApp Manager → Payment settings | הודעות שהעסק יוזם (תבניות) בתשלום לפי הודעה | שליחה ללקוחות |
-| 7 | **המספר האמיתי** 051-525-5387: החלטה על **Coexistence** (האפליקציה ממשיכה לעבוד במקביל ל-API) מול מספר חדש ייעודי | WhatsApp Manager / ספק BSP | Coexistence משנה איך המספר מנוהל. לבדוק תנאים ומגבלות **לפני** החיבור, ולתאם עם מי שעובד היום מהאפליקציה | go-live |
+| 7 | **המספר האמיתי** 051-525-5387: החלטה על **Coexistence** (האפליקציה ממשיכה לעבוד במקביל ל-API) מול מספר חדש ייעודי | ספק BSP (ל-Coexistence) / WhatsApp Manager (למספר חדש) | לפי התיעוד, Coexistence אפשרי **רק דרך Solution Partner או Tech Provider**, לא בהרשמה עצמית. לא אומת שישראל נתמכת: לשאול את הספק. מספר חדש ייעודי מתחבר ישירות, בלי ספק. ראו plan סעיף 5.1 | go-live |
 | 8 | **שם תצוגה** (Display name) למספר | WhatsApp Manager → Phone numbers | Meta מאשרת אותו בנפרד | go-live |
 | 9 | **הגשת התבניות** מ-`whatsapp/templates-meta.md` | WhatsApp Manager → Message templates | אישור לוקח זמן ולפעמים נדחה | שליחה ללקוחות |
 | 10 | **Webhook**: כתובת ומפתח אימות (verify token), הרשמה ל-`messages` | App → WhatsApp → Configuration | קליטת תשובות וסטטוסים. דורש את המתווך (plan סעיף 5) | נכנס |
