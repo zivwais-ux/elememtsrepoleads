@@ -10,6 +10,7 @@
 ## בריפו
 
 - [`docs/work-plan.md`](docs/work-plan.md): מה עושים עכשיו, ובאיזה סדר.
+- [`docs/plans/2026-11-11-bar-omer-dev-2-days.md`](docs/plans/2026-11-11-bar-omer-dev-2-days.md): בר ועומר ב-DEV, תוכנית ליומיים.
 - [`docs/findings/`](docs/findings/): ממצאים מסריקות. קריאה בלבד, בלי נתונים אישיים.
 
 ## כללים
